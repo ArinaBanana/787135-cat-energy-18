@@ -1,0 +1,13 @@
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__link {
+  font-size: 20px;
+  line-height: 20px;
+  color: $txt-color;
+  text-decoration: none;
+  text-transform: uppercase;
+}

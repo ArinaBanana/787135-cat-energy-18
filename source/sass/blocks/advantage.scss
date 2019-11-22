@@ -1,0 +1,26 @@
+.advantage__title {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 60px;
+}
+
+.advantage__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantage__icon {
+  width: 60px;
+  height: 60px;
+  background-color: $bg-color;
+}
+
+.advantage__text {
+  margin: 0;
+  padding: 0;
+
+  font-family: "ArialMT", sans-serif;
+}

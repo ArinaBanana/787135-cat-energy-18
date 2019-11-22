@@ -1,0 +1,25 @@
+.preview {
+  background-image: url("/source/img/index-background-mobile@1x.jpg");
+  background-color: $bg-color;
+}
+
+.preview__title {
+  margin: 0;
+  padding: 0;
+  color: $txt-opposite-color;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.preview__slogan {
+  margin: 0;
+  padding: 0;
+  color: $txt-opposite-color;
+  text-transform: uppercase;
+}
+
+.preview__btn {
+  color: $txt-opposite-color;
+  text-decoration: none;
+  text-transform: uppercase;
+}

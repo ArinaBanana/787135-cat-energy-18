@@ -1,0 +1,23 @@
+@import "base/variable";
+@import "base/font";
+@import "blocks/page-header";
+@import "blocks/main-nav";
+@import "blocks/preview";
+@import "blocks/program";
+@import "blocks/advantage";
+@import "blocks/page-footer";
+@import "blocks/social-list";
+@import "blocks/copyright";
+@import "blocks/catalog";
+@import "blocks/card-list";
+@import "blocks/product";
+@import "blocks/button";
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}

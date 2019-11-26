@@ -1,13 +1,12 @@
 .main-nav__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include none-indentation;
+  @include list-reset;
 }
 
 .main-nav__link {
-  font-size: 20px;
-  line-height: 20px;
-  color: $txt-color;
+  font-size: $font-m;
+  line-height: 1;
+  color: $color-black;
   text-decoration: none;
   text-transform: uppercase;
 }

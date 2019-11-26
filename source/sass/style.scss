@@ -1,5 +1,7 @@
 @import "base/variable";
+@import "base/mixins";
 @import "base/font";
+@import "base/shared";
 @import "blocks/page-header";
 @import "blocks/main-nav";
 @import "blocks/preview";
@@ -12,12 +14,12 @@
 @import "blocks/card-list";
 @import "blocks/product";
 @import "blocks/button";
-
-body {
-  margin: 0;
-  padding: 0;
-
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-}
+@import "blocks/additional-goods";
+@import "blocks/product-additional";
+@import "blocks/gift";
+@import "blocks/contacts";
+@import "blocks/example";
+@import "blocks/slider";
+@import "blocks/programs-page";
+@import "blocks/profile";
+@import "blocks/field";

@@ -1,27 +1,25 @@
 .preview {
-  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-color: $bg-color;
+  background-color: $color-accent;
 }
 
 .preview__title {
-  margin: 0;
-  padding: 0;
-  color: $txt-opposite-color;
-  font-size: 36px;
-  line-height: 36px;
+  @include none-indentation;
+  color: $color-white;
+  font-size: $font-xl;
+  line-height: 1;
 }
 
 .preview__slogan {
-  margin: 0;
-  padding: 0;
-  color: $txt-opposite-color;
+  @include none-indentation;
+  color: $color-white;
   text-transform: uppercase;
   line-height: 14px;
 }
 
 .preview__btn {
-  color: $txt-opposite-color;
+  color: $color-white;
   text-decoration: none;
   text-transform: uppercase;
 }

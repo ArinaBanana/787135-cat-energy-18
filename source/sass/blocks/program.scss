@@ -1,32 +1,29 @@
 .program {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include none-indentation;
+  @include list-reset;
 }
 
 .program__item {
-  background-color: $bg-second-color;
+  background-color: $color-calm;
 }
 
 .program__title {
-  margin: 0;
-  padding: 0;
-  font-size: 24px;
+  @include none-indentation;
+  font-size: $font-l;
   line-height: 37px;
   text-transform: uppercase;
 }
 
 .program__about {
-  margin: 0;
-  padding: 0;
-  color: $txt-second-color;
-  font-family: "ArialMT", sans-serif;
+  @include none-indentation;
+  color: $color-lightgrey;
+  font-family: $add-font;
 }
 
 .program__button {
   text-transform: uppercase;
   text-decoration: none;
-  color: $txt-color;
-  font-size: 16px;
-  line-height: 16px;
+  color: $color-black;
+  font-size: $font-s;
+  line-height: 1;
 }

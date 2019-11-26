@@ -1,0 +1,19 @@
+.gift {
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-color: $color-accent;
+
+  width: 280px;
+  height: 289px;
+}
+
+.gift__text {
+  color: $color-white;
+  font-size: $font-xxs;
+  line-height: 20px;
+  font-family: $add-font;
+}
+
+.gift__logo {
+  width: 56px;
+  height: 61px;
+}

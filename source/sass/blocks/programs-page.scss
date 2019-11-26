@@ -1,0 +1,10 @@
+.programs-page__title {
+  @include none-indentation;
+  font-size: $font-xl;
+  line-height: 60px;
+}
+
+.programs-page__slogan {
+  @include none-indentation;
+  text-transform: uppercase;
+}

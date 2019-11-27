@@ -1,0 +1,16 @@
+.profile__fields {
+  @include none-indentation;
+  border: none;
+}
+
+.profile__title {
+  @include none-indentation;
+  font-size: $font-l;
+  line-height: 1;
+}
+
+.profile__explanation {
+  @include none-indentation;
+  color: $color-lightgrey;
+  line-height: 16px;
+}

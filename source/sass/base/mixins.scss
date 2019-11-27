@@ -1,0 +1,8 @@
+@mixin list-reset {
+  list-style: none;
+}
+
+@mixin none-indentation {
+  margin: 0;
+  padding: 0;
+}

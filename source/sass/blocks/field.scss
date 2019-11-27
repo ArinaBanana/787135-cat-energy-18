@@ -1,0 +1,15 @@
+.field {
+  @include none-indentation;
+}
+
+.field__label {
+  font-size: $font-s;
+  text-transform: uppercase;
+  color: $color-darkgrey;
+}
+
+.field__textarea {
+  text-transform: uppercase;
+  font-size: $font-s;
+  color: $color-lightgrey;
+}

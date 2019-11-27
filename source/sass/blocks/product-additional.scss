@@ -1,14 +1,14 @@
-.product__title {
+.product-additional__title {
   @include none-indentation;
   font-size: $font-s;
-  line-height: 20px;
+  line-height: 1;
   text-transform: uppercase;
 }
 
-.product__prop {
+.product-additional__prop {
   @include none-indentation;
   font-family: $add-font;
+  font-size: $font-xs;
+  line-height: 1;
   color: $color-lightgrey;
-  font-size: $font-xxs;
-  line-height: 16px;
 }

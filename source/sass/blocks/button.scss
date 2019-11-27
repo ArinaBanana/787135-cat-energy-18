@@ -1,14 +1,14 @@
 .button {
-  color: $txt-opposite-color;
-  background-color: $bg-color;
-  font-size: 16px;
+  color: $color-white;
+  background-color: $color-accent;
+  font-size: $font-xxs;
   line-height: 20px;
   text-transform: uppercase;
   border: none;
 }
 
 .button--more {
-  color: $txt-second-color;
-  background-color: $bg-second-color;
+  color: $color-lightgrey;
+  background-color: $color-calm;
   text-decoration: none;
 }

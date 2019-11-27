@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -33,7 +34,7 @@
         <h1 class="preview__title">Функциональное питание для котов</h1>
         <p class="preview__slogan">Занялся собой? Займись котом!</p>
         <img class="preview__img" src="https://via.placeholder.com/280x270" alt="Изображение упаковки Кэт Энерджи" width="280" height="270">
-        <a class="preview__btn button" href="#">Подобрать программу</a>
+        <a class="button preview__btn" href="#">Подобрать программу</a>
       </section>
       <section class="preview-programs">
         <ul class="preview-programs__program program">
@@ -80,13 +81,19 @@
         <p class="example__about">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
           Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
           часов в день. </p>
-        <div class="example__period period">
-          <p class="period__item">5 кг снижение веса</p>
-          <p class="period__item">60 дней затрачено времени</p>
+        <div class="example__period">
+          <p class="example__period-items">
+            <span class="example__period-value">5 кг</span>
+            <span class="example__period-name">снижение веса</span>
+          </p>
+          <p class="example__period-items">
+            <span class="example__period-value">60 дней</span>
+            <span class="example__period-name">затрачено времени</span>
+          </p>
         </div>
         <p class="example__price">Затраты на питание: 15 000 руб.</p>
         <div class="example__slider slider">
-          <img class="slider__img" src="https://via.placeholder.com/150x150" alt="Изображение кота">
+          <img class="slider__img" src="https://via.placeholder.com/311x232" alt="Изображение кота" width="311" height="232">
           <div class="slider__label">Было</div>
           <div class="slider__range range">
             <div class="range__toggle"></div>
@@ -98,12 +105,12 @@
     </main>
     <footer class="page-footer">
       <section class="page-footer__contacts contacts">
-        <div class="contacts__wrapper">
+        <div class="contacts__wrapper contacts__wrapper--bg">
           <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
           <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        </div>
-        <div class="contacts__map map">
-          <img class="map__img" src="https://via.placeholder.com/150x150" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          <div class="contacts__map map">
+            <img class="map__img" src="https://via.placeholder.com/320x362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="320" height="362">
+          </div>
         </div>
       </section>
       <a class="page-footer__logo logo">

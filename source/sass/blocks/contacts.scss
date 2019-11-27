@@ -1,14 +1,17 @@
-.product__title {
+.contacts__wrapper--bg {
+  background-color: $color-white;
+}
+
+.contacts__title {
   @include none-indentation;
   font-size: $font-s;
   line-height: 20px;
   text-transform: uppercase;
 }
 
-.product__prop {
+.contacts__address {
   @include none-indentation;
   font-family: $add-font;
+  line-height: 20px;
   color: $color-lightgrey;
-  font-size: $font-xxs;
-  line-height: 16px;
 }

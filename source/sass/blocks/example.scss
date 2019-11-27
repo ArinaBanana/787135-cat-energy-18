@@ -1,0 +1,35 @@
+.example {
+  background-color: $color-calm;
+}
+
+.example__title {
+  @include none-indentation;
+  font-size: $font-xl;
+  line-height: 60px;
+}
+
+.example__about {
+  @include none-indentation;
+  color: $color-lightgrey;
+}
+
+.example__period-items {
+  @include none-indentation;
+}
+
+.example__period-value {
+  font-size: $font-l;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.example__period-name {
+  font-size: $font-xxs;
+  line-height: 1;
+  color: $color-lightgrey;
+}
+
+.example__price {
+  line-height: 20px;
+  text-transform: uppercase;
+}

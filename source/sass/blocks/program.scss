@@ -1,5 +1,4 @@
 .program {
-  @include none-indentation;
   @include list-reset;
 }
 
@@ -17,7 +16,7 @@
 .program__about {
   @include none-indentation;
   color: $color-lightgrey;
-  font-family: $add-font;
+  font-family: $font-extra;
 }
 
 .program__button {

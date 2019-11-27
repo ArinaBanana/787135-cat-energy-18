@@ -1,6 +1,7 @@
 body {
   @include none-indentation;
-  font-family: $main-font;
+  min-width: $mobile-width;
+  font-family: $font-main;
   font-size: $font-xs;
   line-height: 18px;
 }

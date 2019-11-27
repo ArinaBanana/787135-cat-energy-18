@@ -6,12 +6,16 @@ $color-lightgrey: #444444;
 $color-darkgrey: #222222;
 $color-icon: #666666;
 
-$font-xl: 36px;
-$font-l: 24px;
-$font-m: 20px;
-$font-s: 16px;
-$font-xs: 14px;
 $font-xxs: 12px;
+$font-xs: 14px;
+$font-s: 16px;
+$font-m: 20px;
+$font-l: 24px;
+$font-xl: 36px;
 
-$main-font: "Oswald", "Arial", sans-serif;
-$add-font: "ArialMT", sans-serif;
+$font-main: "Oswald", "Arial", sans-serif;
+$font-extra: "ArialMT", sans-serif;
+
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1440px;

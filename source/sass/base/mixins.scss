@@ -1,4 +1,5 @@
 @mixin list-reset {
+  @include none-indentation;
   list-style: none;
 }
 

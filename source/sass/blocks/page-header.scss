@@ -1,3 +1,23 @@
+.page-header {
+  min-width: $width-mobile;
+}
+
+.page-header__inner {
+  border-bottom: 1px solid $color-calm;
+  display: flex;
+}
+
 .page-header__logo {
   text-decoration: none;
+}
+
+.page-header__btn {
+  display: block;
+  font-size: 0;
+  background-color: red;
+  margin-left: auto;
+
+  &--hidden {
+    display: none;
+  }
 }

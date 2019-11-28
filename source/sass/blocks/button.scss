@@ -5,10 +5,10 @@
   line-height: 20px;
   text-transform: uppercase;
   border: none;
-}
 
-.button--more {
-  color: $color-lightgrey;
-  background-color: $color-calm;
-  text-decoration: none;
+  &--more {
+    color: $color-lightgrey;
+    background-color: $color-calm;
+    text-decoration: none;
+  }
 }

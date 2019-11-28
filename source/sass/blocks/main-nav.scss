@@ -2,7 +2,16 @@
   @include list-reset;
 }
 
+.main-nav__item {
+  border-bottom: 1px solid $color-calm;
+  display: flex;
+  flex-direction: column;
+}
+
 .main-nav__link {
+  padding-top: 22px;
+  padding-bottom: 22px;
+  text-align: center;
   font-size: $font-m;
   line-height: 1;
   color: $color-black;

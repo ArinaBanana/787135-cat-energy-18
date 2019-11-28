@@ -1,3 +1,6 @@
+.advantage {
+  padding: 0 20px;
+}
 .advantage__title {
   @include none-indentation;
   text-transform: uppercase;
@@ -10,6 +13,10 @@
   list-style: none;
 }
 
+.advantage__item {
+  //display: flex;
+}
+
 .advantage__icon {
   width: 60px;
   height: 60px;
@@ -19,4 +26,6 @@
 .advantage__text {
   @include none-indentation;
   font-family: $font-extra;
+
+  margin-left: 20px;
 }

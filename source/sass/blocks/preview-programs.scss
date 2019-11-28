@@ -1,0 +1,9 @@
+.preview-programs__list {
+  @include list-reset;
+  margin-top: 22px;
+  padding: 0 20px;
+}
+
+.preview-programs__item {
+  margin-bottom: 20px;
+}

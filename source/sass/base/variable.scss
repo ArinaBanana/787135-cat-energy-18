@@ -13,9 +13,10 @@ $font-m: 20px;
 $font-l: 24px;
 $font-xl: 36px;
 
-$font-main: "Oswald", "Arial", sans-serif;
-$font-extra: "ArialMT", sans-serif;
+$font-main: "Oswald", "Arial";
+$font-main-weight: "Oswald Medium";
+$font-extra: "ArialMT";
 
-$mobile-width: 320px;
-$tablet-width: 768px;
-$desktop-width: 1440px;
+$width-mobile: 320px;
+$width-tablet: 768px;
+$width-desktop: 1440px;

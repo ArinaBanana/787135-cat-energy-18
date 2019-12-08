@@ -96,6 +96,8 @@
 .preview__pictures {
   position: absolute;
   top: 431px;
+  left: 50%;
+  transform: translateX(-50%);
 
   @media (min-width: $width-tablet) {
     position: static;

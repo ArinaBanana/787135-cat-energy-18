@@ -1,14 +1,24 @@
 .page-header {
-  min-width: $width-mobile;
+  @media (min-width: $width-tablet) {
+    display: flex;
+  }
+
+  @media (min-width: $width-desktop) {
+    display: flex;
+  }
 }
 
 .page-header__inner {
-  border-bottom: 1px solid $color-calm;
-  display: flex;
+  border-bottom: 1px solid $color-border;
+
+  @media (min-width: $width-tablet) {
+    border: none;
+  }
 }
 
 .page-header__logo {
   text-decoration: none;
+  display: block;
 }
 
 .page-header__btn {
@@ -18,6 +28,10 @@
   margin-left: auto;
 
   &--hidden {
+    display: none;
+  }
+
+  @media (min-width: $width-tablet) {
     display: none;
   }
 }

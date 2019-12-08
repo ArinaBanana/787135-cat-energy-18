@@ -1,3 +1,8 @@
 .page-footer {
   background-color: $color-calm;
 }
+
+.page-footer__bottom {
+  display: flex;
+  flex-direction: column;
+}

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
-     <meta name="viewport"  content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -11,7 +11,12 @@
       <header class="page-header">
         <div class="page-header__inner">
           <a class="page-header__logo logo" href="#">
-            <img class="logo__img" src="https://via.placeholder.com/191x39" alt="Кэт Энерджи" width="191" height="39">
+            <picture>
+              <source srcset="img/logo-desktop.svg" media="(min-width: 1440px)">
+              <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+              <source srcset="img/logo-mobile.svg" media="(min-width: 320px)">
+              <img src="img/logo-desktop.svg" alt="Логотип Кет Энерджи" width="203" height="60">
+            </picture>
           </a>
           <button class="page-header__btn page-header__btn--hidden">Меню</button>
           <button class="page-header__btn page-header__btn--cross">Закрыть</button>
@@ -32,11 +37,19 @@
       </header>
       <main>
         <section class="preview">
-          <div class="preview__background">
+          <div class="preview__background"></div>
+          <div class="preview__wrapper">
             <h1 class="preview__title">Функциональное питание для котов</h1>
             <p class="preview__slogan">Занялся собой? Займись котом!</p>
           </div>
-          <img class="preview__img" src="https://via.placeholder.com/280x270" alt="Изображение упаковки Кэт Энерджи" width="280" height="270">
+          <div class="preview__pictures">
+            <picture>
+              <source srcset="img/index-can-desktop@1x.png" media="(min-width: 1440px)">
+              <source srcset="img/index-can-tablet@1x.jpg" media="(min-width: 768px)">
+              <source srcset="img/index-can-mobile@1x.png" media="(min-width: 320px)">
+              <img src="img/index-can-desktop@1x.png" alt="Изображение упаковки Кэт Энерджи">
+            </picture>
+          </div>
           <a class="button preview__btn" href="#">Подобрать программу</a>
         </section>
         <section class="preview-programs">
@@ -116,25 +129,27 @@
             </div>
           </div>
         </section>
-        <a class="page-footer__logo logo">
-          <img class="logo__img logo__img--footer" src="https://via.placeholder.com/128x24" alt="Кэт Энерджи" width="128" height="24">
-        </a>
-        <ul class="page-footer__social-list social-list">
-          <li class="social-list__item social-list__item--vk">
-            <a class="social-list__link" href="#">Мы в Вконтакте</a>
-          </li>
-          <li class="social-list__item social-list__item--inst">
-            <a class="social-list__link" href="#">Мы в Инстраграме</a>
-          </li>
-          <li class="social-list__item social-list__item--fb">
-            <a class="social-list__link" href="#">Мы в Фейсбуке</a>
-          </li>
-        </ul>
-        <div class="page-footer__copyright copyright">
-          <a class="copyright__academy">HTML Academy</a>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="copyright__logo-academy" src="https://via.placeholder.com/27x34" alt="Ссылка на академию">
+        <div class="page-footer__bottom">
+          <a class="page-footer__logo logo">
+            <img class="logo__img logo__img--footer" src="https://via.placeholder.com/128x24" alt="Кэт Энерджи" width="128" height="24">
           </a>
+          <ul class="page-footer__social-list social-list">
+            <li class="social-list__item social-list__item--vk">
+              <a class="social-list__link" href="#">Мы в Вконтакте</a>
+            </li>
+            <li class="social-list__item social-list__item--inst">
+              <a class="social-list__link" href="#">Мы в Инстраграме</a>
+            </li>
+            <li class="social-list__item social-list__item--fb">
+              <a class="social-list__link" href="#">Мы в Фейсбуке</a>
+            </li>
+          </ul>
+          <div class="page-footer__copyright copyright">
+            <a class="copyright__academy">HTML Academy</a>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <img class="copyright__logo-academy" src="https://via.placeholder.com/27x34" alt="Ссылка на академию">
+            </a>
+          </div>
         </div>
       </footer>
     </div>

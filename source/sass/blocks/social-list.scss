@@ -1,3 +1,9 @@
 .social-list {
   @include list-reset;
+  display: flex;
+  align-items: center;
+}
+
+.social-list__link {
+  text-decoration: none;
 }

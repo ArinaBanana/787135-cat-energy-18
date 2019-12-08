@@ -2,23 +2,76 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: $width-tablet) {
+    align-items: start;
+  }
+
+  @media (min-width: $width-desktop) {
+    flex-direction: row;
+  }
 }
 
 .preview__background {
+  width: 320px;
+  height: 305px;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-color: $color-accent;
-  padding-top: 29px;
-  padding-bottom: 167px;
+
+  @media (min-width: $width-tablet) {
+    width: 0;
+    height: 0;
+    background: none;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 720px;
+    height: 696px;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-color: $color-accent;
+
+    order: 2;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 50%;
+  }
+}
+
+.preview__wrapper {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+
+  @media (min-width: $width-tablet) {
+    position: static;
+  }
+
+  @media (min-width: $width-desktop) {
+    position: static;
+  }
 }
 
 .preview__title {
   @include none-indentation;
   color: $color-white;
-  font-size: $font-xl;
+  font-size: $font-xxl;
   line-height: 1;
   text-align: center;
   padding-bottom: 19px;
+
+  @media (min-width: $width-tablet) {
+    color: $color-black;
+    text-align: start;
+    font-size: $fontLarger-xxl;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-bottom: 33px;
+    font-size: $fontLarger-xxl;
+  }
 }
 
 .preview__slogan {
@@ -27,10 +80,47 @@
   text-transform: uppercase;
   line-height: 14px;
   text-align: center;
+
+  @media (min-width: $width-tablet) {
+    color: $color-black;
+    text-align: start;
+    font-size: $fontLarger-m;
+    padding-bottom: 20px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-bottom: 53px;
+  }
+}
+
+.preview__pictures {
+  position: absolute;
+  top: 431px;
+
+  @media (min-width: $width-tablet) {
+    position: static;
+  }
+
+  @media (min-width: $width-desktop) {
+    position: absolute;
+    left: 560px;
+    top: 142px;
+  }
 }
 
 .preview__btn {
   color: $color-white;
   text-decoration: none;
   text-transform: uppercase;
+  margin-top: 135px;
+
+  @media (min-width: $width-tablet) {
+    margin-top: 0;
+    position: absolute;
+    top: 248px;
+  }
+
+  @media (min-width: $width-desktop) {
+    top: 195px;
+  }
 }

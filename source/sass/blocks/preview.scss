@@ -101,12 +101,14 @@
 
   @media (min-width: $width-tablet) {
     position: static;
+    transform: translateX(0);
   }
 
   @media (min-width: $width-desktop) {
     position: absolute;
-    left: 560px;
     top: 142px;
+    left: 50%;
+    transform: translateX(-30%);
   }
 }
 

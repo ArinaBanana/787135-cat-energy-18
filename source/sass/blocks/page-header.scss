@@ -1,13 +1,3 @@
-.page-header {
-  @media (min-width: $width-tablet) {
-    display: flex;
-  }
-
-  @media (min-width: $width-desktop) {
-    display: flex;
-  }
-}
-
 .page-header__inner {
   border-bottom: 1px solid $color-border;
 

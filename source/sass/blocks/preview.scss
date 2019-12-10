@@ -65,12 +65,12 @@
   @media (min-width: $width-tablet) {
     color: $color-black;
     text-align: start;
-    font-size: $fontLarger-xxl;
+    font-size: $font-xxxl;
   }
 
   @media (min-width: $width-desktop) {
     padding-bottom: 33px;
-    font-size: $fontLarger-xxl;
+    font-size: $font-xxxl;
   }
 }
 
@@ -84,7 +84,7 @@
   @media (min-width: $width-tablet) {
     color: $color-black;
     text-align: start;
-    font-size: $fontLarger-m;
+    font-size: $font-larger-m;
     padding-bottom: 20px;
   }
 
@@ -105,10 +105,9 @@
   }
 
   @media (min-width: $width-desktop) {
-    position: absolute;
     top: 142px;
     left: 50%;
-    transform: translateX(-30%);
+    transform: translateX(-40%);
   }
 }
 

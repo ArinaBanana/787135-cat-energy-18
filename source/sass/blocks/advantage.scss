@@ -1,3 +1,7 @@
+.advantage {
+  @include fixed-indent;
+}
+
 .advantage__title {
   @include none-indentation;
   text-transform: uppercase;
@@ -20,6 +24,10 @@
   margin-bottom: 20px;
 
   @media (min-width: $width-tablet) {
+    flex-basis: 35%;
+  }
+
+  @media (min-width: $width-desktop) {
     flex-basis: 25%;
   }
 }

@@ -1,4 +1,5 @@
 .preview {
+  @include fixed-indent;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -121,9 +122,5 @@
     margin-top: 0;
     position: absolute;
     top: 248px;
-  }
-
-  @media (min-width: $width-desktop) {
-    top: 195px;
   }
 }

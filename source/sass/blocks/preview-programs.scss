@@ -1,14 +1,19 @@
 .preview-programs {
-  @media (min-width: $width-desktop) {
-    //margin-top: 500px;
-  }
+  @include fixed-indent;
 }
 
 .preview-programs__list {
   @include list-reset;
-  margin-top: 22px;
+
+  @media (min-width: $width-desktop) {
+    display: flex;
+  }
 }
 
 .preview-programs__item {
   margin-bottom: 20px;
+
+  @media (min-width: $width-desktop) {
+    flex-basis: 50%;
+  }
 }

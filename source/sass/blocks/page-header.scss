@@ -1,8 +1,19 @@
+.page-header {
+  @media (min-width: $width-tablet) {
+    display: flex;
+    @include fixed-indent;
+  }
+}
+
 .page-header__inner {
+  @include fixed-indent;
   border-bottom: 1px solid $color-border;
+  display: flex;
+  align-items: center;
 
   @media (min-width: $width-tablet) {
     border: none;
+    padding: 0;
   }
 }
 
@@ -13,8 +24,11 @@
 
 .page-header__btn {
   display: block;
+  width: 19px;
+  height: 19px;
+  background: url("../img/m-close-svg.svg") no-repeat;
+  border: none;
   font-size: 0;
-  background-color: red;
   margin-left: auto;
 
   &--hidden {

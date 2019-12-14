@@ -1,4 +1,9 @@
 .social-list {
-  @include none-indentation;
   @include list-reset;
+  display: flex;
+  align-items: center;
+}
+
+.social-list__link {
+  text-decoration: none;
 }

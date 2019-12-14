@@ -1,11 +1,13 @@
 @import "base/variable";
 @import "base/mixins";
 @import "base/font";
-@import "base/shared";
+@import "base/layout";
+@import "blocks/container";
 @import "blocks/page-header";
 @import "blocks/main-nav";
 @import "blocks/preview";
 @import "blocks/program";
+@import "blocks/preview-programs";
 @import "blocks/advantage";
 @import "blocks/page-footer";
 @import "blocks/social-list";
@@ -23,3 +25,4 @@
 @import "blocks/programs-page";
 @import "blocks/profile";
 @import "blocks/field";
+@import "blocks/logo";

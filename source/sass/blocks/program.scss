@@ -1,10 +1,16 @@
 .program {
-  @include none-indentation;
-  @include list-reset;
+  background-color: $color-calm;
+  padding: 22px;
 }
 
-.program__item {
-  background-color: $color-calm;
+.program__wrapper-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+
+  @media (min-width: $width-tablet) {
+    position: relative;
+  }
 }
 
 .program__title {
@@ -12,12 +18,27 @@
   font-size: $font-l;
   line-height: 37px;
   text-transform: uppercase;
+  margin-left: 20px;
+
+  @media (min-width: $width-tablet) {
+    margin-left: 0;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-left: 64px;
+  }
 }
 
 .program__about {
   @include none-indentation;
   color: $color-lightgrey;
-  font-family: $add-font;
+  font-family: $font-extra;
+  margin-bottom: 44px;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 61px;
+    width: 371px;
+  }
 }
 
 .program__button {
@@ -26,4 +47,48 @@
   color: $color-black;
   font-size: $font-s;
   line-height: 1;
+  display: block;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 40px;
+  }
+}
+
+.program__ellipse {
+  width: 50px;
+  height: 51px;
+  display: inline-block;
+  vertical-align: center;
+  background-color: $color-accent;
+  border: 1px solid $color-accent;
+  border-radius: 50%;
+
+  &--slim-cat {
+    //background-image: url("../img/icon-cat-slim.svg");
+    //background-repeat: no-repeat;
+    //background-position: 50%;
+  }
+
+  &--weight-cat {
+    //background-image: url("../img/icon-cat-pro.svg");
+    //background-repeat: no-repeat;
+    //background-position: 50%;
+  }
+
+  @media (min-width: $width-tablet) {
+    width: 200px;
+    height: 200px;
+    order: 2;
+
+    position: absolute;
+    left: 60%;
+    top: 0;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 100px;
+    height: 100px;
+    order: -1;
+    position: static;
+  }
 }

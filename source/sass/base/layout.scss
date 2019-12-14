@@ -1,6 +1,16 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   @include none-indentation;
-  font-family: $main-font;
+  font-family: $font-main;
   font-size: $font-xs;
   line-height: 18px;
 }

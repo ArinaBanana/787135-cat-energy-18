@@ -5,13 +5,22 @@ $color-white: #ffffff;
 $color-lightgrey: #444444;
 $color-darkgrey: #222222;
 $color-icon: #666666;
+$color-border: #d9d9d9;
 
-$font-xl: 36px;
-$font-l: 24px;
-$font-m: 20px;
-$font-s: 16px;
-$font-xs: 14px;
 $font-xxs: 12px;
+$font-xs: 14px;
+$font-s: 16px;
+$font-m: 18px;
+$font-larger-m: 20px;
+$font-l: 24px;
+$font-xl: 30px;
+$font-xxl: 36px;
+$font-xxxl: 60px;
 
-$main-font: "Oswald", "Arial", sans-serif;
-$add-font: "ArialMT", sans-serif;
+$font-main: "Oswald";
+$font-weight: 500;
+$font-extra: "ArialMT";
+
+$width-mobile: 320px;
+$width-tablet: 768px;
+$width-desktop: 1280px;

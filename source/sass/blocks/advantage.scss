@@ -1,13 +1,35 @@
+.advantage {
+  @include fixed-indent;
+}
+
 .advantage__title {
   @include none-indentation;
   text-transform: uppercase;
-  font-size: $font-xl;
+  font-size: $font-xxl;
   line-height: 60px;
 }
 
 .advantage__list {
   @include none-indentation;
   list-style: none;
+
+  @media (min-width: $width-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.advantage__item {
+  display: flex;
+  margin-bottom: 20px;
+
+  @media (min-width: $width-tablet) {
+    flex-basis: 35%;
+  }
+
+  @media (min-width: $width-desktop) {
+    flex-basis: 25%;
+  }
 }
 
 .advantage__icon {
@@ -18,5 +40,8 @@
 
 .advantage__text {
   @include none-indentation;
-  font-family: $add-font;
+  font-family: $font-extra;
+
+  margin-left: 20px;
+  flex-basis: calc(100% - 60px);
 }

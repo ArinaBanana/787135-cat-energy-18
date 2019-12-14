@@ -1,3 +1,9 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .copyright__academy {
   color: $color-lightgrey;
   text-decoration: none;

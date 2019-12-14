@@ -1,16 +1,18 @@
 .example {
+  @include fixed-indent;
   background-color: $color-calm;
 }
 
 .example__title {
   @include none-indentation;
-  font-size: $font-xl;
+  font-size: $font-xxl;
   line-height: 60px;
 }
 
 .example__about {
   @include none-indentation;
   color: $color-lightgrey;
+  font-family: $font-extra;
 }
 
 .example__period-items {
@@ -27,6 +29,7 @@
   font-size: $font-xxs;
   line-height: 1;
   color: $color-lightgrey;
+  font-family: $font-extra;
 }
 
 .example__price {

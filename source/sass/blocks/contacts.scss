@@ -2,14 +2,6 @@
   background-color: $color-white;
 }
 
-.contacts__wrapper {
-  @include fixed-indent;
-
-  @media (min-width: $width-desktop) {
-    @include fixed-container;
-  }
-}
-
 .contacts__title {
   @include none-indentation;
   font-size: $font-s;

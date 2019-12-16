@@ -1,7 +1,8 @@
 .page-header {
   @media (min-width: $width-tablet) {
-    display: flex;
+    @include fixed-container;
     @include fixed-indent;
+    display: flex;
   }
 }
 

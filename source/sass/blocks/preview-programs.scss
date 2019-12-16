@@ -1,5 +1,9 @@
 .preview-programs {
   @include fixed-indent;
+
+  @media (min-width: $width-desktop) {
+    @include fixed-container;
+  }
 }
 
 .preview-programs__list {

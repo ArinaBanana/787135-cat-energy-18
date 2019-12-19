@@ -1,3 +1,8 @@
+.additional-goods {
+  @include fixed-container;
+  @include fixed-indent;
+}
+
 .additional-goods__title {
   @include none-indentation;
   font-size: $font-l;

@@ -1,8 +1,30 @@
+.product {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product__inner {
+  width: 50%;
+  padding-top: 25px;
+}
+
 .product__title {
   @include none-indentation;
   font-size: $font-s;
   line-height: 20px;
   text-transform: uppercase;
+  width: 74px;
+  word-wrap: break-word;
+  margin-bottom: 18px;
+
+  &--more {
+    width: 210px;
+  }
+}
+
+.product__properties {
+  display: flex;
+  justify-content: space-between;
 }
 
 .product__prop {
@@ -11,4 +33,10 @@
   color: $color-lightgrey;
   font-size: $font-xxs;
   line-height: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product__btn {
+  width: 100%;
 }

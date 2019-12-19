@@ -10,10 +10,15 @@
     <header class="page-header">
       <div class="page-header__inner">
         <a class="page-header__logo logo" href="#">
-          <img class="logo__img" src="https://via.placeholder.com/191x39" alt="Кэт Энерджи" width="191" height="39">
+          <picture>
+            <source srcset="img/logo-desktop.svg" media="(min-width: 1440px)">
+            <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+            <source srcset="img/logo-mobile.svg" media="(min-width: 320px)">
+            <img src="img/logo-desktop.svg" alt="Логотип Кет Энерджи" width="203" height="60">
+          </picture>
         </a>
-        <button class="page-header__btn">Меню</button>
-        <button class="page-header__btn page-header__btn--close">Закрыть</button>
+        <button class="page-header__btn page-header__btn--hidden">Меню</button>
+        <button class="page-header__btn page-header__btn--cross">Закрыть</button>
       </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
@@ -34,143 +39,194 @@
         <h1 class="catalog__title">Каталог продукции</h1>
         <ul class="catalog__list card-list">
           <li class="card-list__item product">
-            <img class="product__logo" src="https://via.placeholder.com/140x144" alt="Изображение упаковки со вкусом курицы 500 г" width="140" height="144">
-            <h3 class="product__title">Cat Energy PRO 500 г</h3>
-            <div class="product__properties">
-              <p class="product__prop">
-                <span class="product__prop-name">Объем</span>
-                <span class="product__prop-value">500 г</span>
-              </p>
-              <p class="product__prop">
-                <span class="product__prop-name">Вкус</span>
-                <span class="product__prop-value">Курица</span>
-              </p>
-              <p class="product__prop">
-                <span class="product__prop-name">Цена</span>
-                <span class="product__prop-value">700 Р.</span>
-              </p>
+            <div class="product__pictures">
+              <picture>
+                <source srcset="img/chicken-small-desktop@1x.png" media="(min-width: 1440px)">
+                <source srcset="img/chicken-small-tablet@1x.png" media="(min-width: 768px)">
+                <source srcset="img/chicken-small-mobile@1x.jpg" media="(min-width: 320px)">
+                <img src="img/chicken-small-desktop@1x.png" alt="Изображение упаковки со вкусом курицы 500 г">
+              </picture>
             </div>
-            <button class="button">Заказать</button>
+            <div class="product__inner">
+              <h3 class="product__title">Cat Energy PRO 500 г</h3>
+              <div class="product__properties">
+                <p class="product__prop">
+                  <span class="product__prop-name">Объем</span>
+                  <span class="product__prop-name">Вкус</span>
+                  <span class="product__prop-name">Цена</span>
+                </p>
+                <p class="product__prop">
+                  <span class="product__prop-value">500 г</span>
+                  <span class="product__prop-value">Курица</span>
+                  <span class="product__prop-value">700 Р.</span>
+                </p>
+              </div>
+            </div>
+            <button class="button product__btn">Заказать</button>
           </li>
           <li class="card-list__item product">
-            <img class="product__logo" src="https://via.placeholder.com/140x144" alt="Изображение упаковки со вкусом курицы 1000 г" width="140" height="144">
-            <h3 class="product__title">Cat Energy PRO 1000 г</h3>
-            <div class="product__properties">
-              <p class="product__prop">
-                <span class="product__prop-name">Объем</span>
-                <span class="product__prop-value">1000 г</span>
-              </p>
-              <p class="product__prop">
-                <span class="product__prop-name">Вкус</span>
-                <span class="product__prop-value">Курица</span>
-              </p>
-              <p class="product__prop">
-                <span class="product__prop-name">Цена</span>
-                <span class="product__prop-value">1000 Р.</span>
-              </p>
+            <div class="product__pictures">
+              <picture>
+                <source srcset="img/chicken-big-desktop@1x.png" media="(min-width: 1440px)">
+                <source srcset="img/chicken-big-tablet@1x.png" media="(min-width: 768px)">
+                <source srcset="img/chicken-big-mobile@1x.jpg" media="(min-width: 320px)">
+                <img src="img/chicken-big-desktop@1x.png" alt="Изображение упаковки со вкусом курицы 1000 г">
+              </picture>
             </div>
-            <button class="button">Заказать</button>
+            <div class="product__inner">
+              <h3 class="product__title">Cat Energy PRO 1000 г</h3>
+              <div class="product__properties">
+                <p class="product__prop">
+                  <span class="product__prop-name">Объем</span>
+                  <span class="product__prop-name">Вкус</span>
+                  <span class="product__prop-name">Цена</span>
+                </p>
+                <p class="product__prop">
+                  <span class="product__prop-value">1000 г</span>
+                  <span class="product__prop-value">Курица</span>
+                  <span class="product__prop-value">1000 Р.</span>
+                </p>
+              </div>
+            </div>
+            <button class="button product__btn">Заказать</button>
           </li>
           <li class="card-list__item product">
-            <img class="product__logo" src="https://via.placeholder.com/140x144" alt="Изображение упаковки со вкусом рыбы 500 г" width="140" height="144">
-            <h3 class="product__title">Cat Energy PRO 500 г</h3>
-            <div class="product__properties">
-              <p class="product__prop">
-                <span class="product__prop-name">Объем</span>
-                <span class="product__prop-value">500 г</span>
-              </p>
-              <p class="product__prop">
-                <span class="product__prop-name">Вкус</span>
-                <span class="product__prop-value">Рыба</span>
-              </p>
-              <p class="product__prop">
-                <span class="product__prop-name">Цена</span>
-                <span class="product__prop-value">700 Р.</span>
-              </p>
+            <div class="product__pictures">
+              <picture>
+                <source srcset="img/fish-small-desktop@1x.png" media="(min-width: 1440px)">
+                <source srcset="img/fish-small-tablet@1x.png" media="(min-width: 768px)">
+                <source srcset="img/fish-small-mobile@1x.jpg" media="(min-width: 320px)">
+                <img src="img/fish-small-desktop@1x.png" alt="Изображение упаковки со вкусом рыбы 500 г">
+              </picture>
             </div>
-            <button class="button">Заказать</button>
+            <div class="product__inner">
+              <h3 class="product__title">Cat Energy PRO 500 г</h3>
+              <div class="product__properties">
+                <p class="product__prop">
+                  <span class="product__prop-name">Объем</span>
+                  <span class="product__prop-name">Вкус</span>
+                  <span class="product__prop-name">Цена</span>
+                </p>
+                <p class="product__prop">
+                  <span class="product__prop-value">500 г</span>
+                  <span class="product__prop-value">Рыба</span>
+                  <span class="product__prop-value">700 Р.</span>
+                </p>
+              </div>
+            </div>
+            <button class="button product__btn">Заказать</button>
           </li>
           <li class="card-list__item product">
-            <img class="product__logo" src="https://via.placeholder.com/140x144" alt="Изображение упаковки со вкусом рыбы 1000 г" width="140" height="144">
-            <h3 class="product__title">Cat Energy PRO 1000 г</h3>
-            <div class="product__properties">
-              <p class="product__prop">
-                <span class="product__prop-name">Объем</span>
-                <span class="product__prop-value">1000 г</span>
-              </p>
-              <p class="product__prop">
-                <span class="product__prop-name">Вкус</span>
-                <span class="product__prop-value">Рыба</span>
-              </p>
-              <p class="product__prop">
-                <span class="product__prop-name">Цена</span>
-                <span class="product__prop-value">1000 Р.</span>
-              </p>
+            <div class="product__pictures">
+              <picture>
+                <source srcset="img/fish-big-desktop@1x.png" media="(min-width: 1440px)">
+                <source srcset="img/fish-big-tablet@1x.png" media="(min-width: 768px)">
+                <source srcset="img/fish-big-mobile@1x.jpg" media="(min-width: 320px)">
+                <img src="img/fish-big-desktop@1x.png" alt="Изображение упаковки со вкусом рыбы 1000 г">
+              </picture>
             </div>
-            <button class="button">Заказать</button>
+            <div class="product__inner">
+              <h3 class="product__title">Cat Energy PRO 1000 г</h3>
+              <div class="product__properties">
+                <p class="product__prop">
+                  <span class="product__prop-name">Объем</span>
+                  <span class="product__prop-name">Вкус</span>
+                  <span class="product__prop-name">Цена</span>
+                </p>
+                <p class="product__prop">
+                  <span class="product__prop-value">1000 г</span>
+                  <span class="product__prop-value">Рыба</span>
+                  <span class="product__prop-value">1000 Р.</span>
+                </p>
+              </div>
+            </div>
+            <button class="button product__btn">Заказать</button>
           </li>
           <li class="card-list__item product">
-            <img class="product__logo" src="https://via.placeholder.com/140x144" alt="Изображение упаковки со вкусом гречки 500 г" width="140" height="144">
-            <h3 class="product__title">Cat Energy SLIM 500 г</h3>
-            <div class="product__properties">
-              <p class="product__prop">
-                <span class="product__prop-name">Объем</span>
-                <span class="product__prop-value">500 г</span>
-              </p>
-              <p class="product__prop">
-                <span class="product__prop-name">Вкус</span>
-                <span class="product__prop-value">Гречка</span>
-              </p>
-              <p class="product__prop">
-                <span class="product__prop-name">Цена</span>
-                <span class="product__prop-value">400 Р.</span>
-              </p>
+            <div class="product__pictures">
+              <picture>
+                <source srcset="img/buckwheat-small-desktop@1x.png" media="(min-width: 1440px)">
+                <source srcset="img/buckwheat-small-tablet@1x.png" media="(min-width: 768px)">
+                <source srcset="img/buckwheat-small-mobile@1x.jpg" media="(min-width: 320px)">
+                <img src="img/buckwheat-small-desktop@1x.png" alt="Изображение упаковки со вкусом гречки 500 г">
+              </picture>
             </div>
-            <button class="button">Заказать</button>
+            <div class="product__inner">
+              <h3 class="product__title">Cat Energy SLIM 500 г</h3>
+              <div class="product__properties">
+                <p class="product__prop">
+                  <span class="product__prop-name">Объем</span>
+                  <span class="product__prop-name">Вкус</span>
+                  <span class="product__prop-name">Цена</span>
+                </p>
+                <p class="product__prop">
+                  <span class="product__prop-value">500 г</span>
+                  <span class="product__prop-value">Гречка</span>
+                  <span class="product__prop-value">400 Р.</span>
+                </p>
+              </div>
+            </div>
+            <button class="button product__btn">Заказать</button>
           </li>
           <li class="card-list__item product">
-            <img class="product__logo" src="https://via.placeholder.com/140x144" alt="Изображение упаковки со вкусом гречки 1000 г" width="140" height="144">
-            <h3 class="product__title">Cat Energy SLIM 1000 г</h3>
-            <div class="product__properties">
-              <p class="product__prop">
-                <span class="product__prop-name">Объем</span>
-                <span class="product__prop-value">1000 г</span>
-              </p>
-              <p class="product__prop">
-                <span class="product__prop-name">Вкус</span>
-                <span class="product__prop-value">Гречка</span>
-              </p>
-              <p class="product__prop">
-                <span class="product__prop-name">Цена</span>
-                <span class="product__prop-value">700 Р.</span>
-              </p>
+            <div class="product__pictures">
+              <picture>
+                <source srcset="img/buckwheat-big-desktop@1x.png" media="(min-width: 1440px)">
+                <source srcset="img/buckwheat-big-tablet@1x.png" media="(min-width: 768px)">
+                <source srcset="img/buckwheat-big-mobile@1x.jpg" media="(min-width: 320px)">
+                <img src="img/buckwheat-big-desktop@1x.png" alt="Изображение упаковки со вкусом гречки 1000 г">
+              </picture>
             </div>
-            <button class="button">Заказать</button>
+            <div class="product__inner">
+              <h3 class="product__title">Cat Energy SLIM 1000 г</h3>
+              <div class="product__properties">
+                <p class="product__prop">
+                  <span class="product__prop-name">Объем</span>
+                  <span class="product__prop-name">Вкус</span>
+                  <span class="product__prop-name">Цена</span>
+                </p>
+                <p class="product__prop">
+                  <span class="product__prop-value">1000 г</span>
+                  <span class="product__prop-value">Гречка</span>
+                  <span class="product__prop-value">700 Р.</span>
+                </p>
+              </div>
+            </div>
+            <button class="button product__btn">Заказать</button>
           </li>
           <li class="card-list__item product">
-            <img class="product__logo" src="https://via.placeholder.com/140x144" alt="Изображение упаковки со вкусом риса 500 г" width="140" height="144">
-            <h3 class="product__title">Cat Energy SLIM 500 г</h3>
-            <div class="product__properties">
-              <p class="product__prop">
-                <span class="product__prop-name">Объем</span>
-                <span class="product__prop-value">500 г</span>
-              </p>
-              <p class="product__prop">
-                <span class="product__prop-name">Вкус</span>
-                <span class="product__prop-value">Рис</span>
-              </p>
-              <p class="product__prop">
-                <span class="product__prop-name">Цена</span>
-                <span class="product__prop-value">500 Р.</span>
-              </p>
+            <div class="product__pictures">
+              <picture>
+                <source srcset="img/rice-small-desktop@1x.png" media="(min-width: 1440px)">
+                <source srcset="img/rice-small-tablet@1x.png" media="(min-width: 768px)">
+                <source srcset="img/rice-small-mobile@1x.jpg" media="(min-width: 320px)">
+                <img src="img/rice-small-desktop@1x.png" alt="Изображение упаковки со вкусом риса 500 г">
+              </picture>
             </div>
-            <button class="button">Заказать</button>
+            <div class="product__inner">
+              <h3 class="product__title">Cat Energy SLIM 500 г</h3>
+              <div class="product__properties">
+                <p class="product__prop">
+                  <span class="product__prop-name">Объем</span>
+                  <span class="product__prop-name">Вкус</span>
+                  <span class="product__prop-name">Цена</span>
+                </p>
+                <p class="product__prop">
+                  <span class="product__prop-value">500 г</span>
+                  <span class="product__prop-value">Рис</span>
+                  <span class="product__prop-value">500 Р.</span>
+                </p>
+              </div>
+            </div>
+            <button class="button product__btn">Заказать</button>
           </li>
           <li class="card-list__item product">
             <div class="product__logo--more">+</div>
-            <p class="product__title">Показать еще 100500 товаров</p>
-            <p class="product__prop">На самом деле вкусов гораздо больше!</p>
-            <a class="button button--more" href="#">Показать все</a>
+            <div class="product__inner">
+              <p class="product__title product__title--more">Показать еще 100500 товаров</p>
+              <p class="product__prop">На самом деле вкусов гораздо больше!</p>
+            </div>
+            <a class="button button--more product__btn" href="#">Показать все</a>
           </li>
         </ul>
       </section>
@@ -222,7 +278,12 @@
           <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
           <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
           <div class="contacts__map map">
-            <img class="map__img" src="https://via.placeholder.com/360x362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="360" height="362">
+            <picture>
+              <source srcset="img/bg-map-desktop@1x.png" media="(min-width: 1440px)">
+              <source srcset="img/bg-map-tablet@1x.png" media="(min-width: 768px)">
+              <source srcset="img/bg-map-mobile@1x.png" media="(min-width: 320px)">
+              <img src="img/bg-map-desktop@1x.png" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+            </picture>
           </div>
         </div>
       </section>

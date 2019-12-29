@@ -13,7 +13,7 @@
   align-items: center;
 
   @media (min-width: $width-tablet) {
-    border: none;
+    border: 0;
     padding: 0;
   }
 }
@@ -28,7 +28,7 @@
   width: 19px;
   height: 19px;
   background: url("../img/m-close-svg.svg") no-repeat;
-  border: none;
+  border: 0;
   font-size: 0;
   margin-left: auto;
 

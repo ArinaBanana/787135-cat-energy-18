@@ -18,8 +18,8 @@
   }
 
   @media (min-width: $width-desktop) {
-    border-left: none;
-    border-right: none;
+    border-left: 0;
+    border-right: 0;
     padding: 15px 0;
     align-items: center;
   }

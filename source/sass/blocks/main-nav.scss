@@ -19,7 +19,7 @@
   flex-direction: column;
 
   @media (min-width: $width-tablet) {
-    border-bottom: none;
+    border-bottom: 0;
     margin-left: 36px;
 
     &--active {

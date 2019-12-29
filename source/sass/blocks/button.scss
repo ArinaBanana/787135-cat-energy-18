@@ -5,9 +5,8 @@
   font-family: $font-main;
   line-height: 20px;
   text-transform: uppercase;
-  border: none;
+  border: 0;
   cursor: pointer;
-  padding: 10px 0;
 
   &--more {
     color: $color-lightgrey;

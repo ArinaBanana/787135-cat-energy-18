@@ -23,5 +23,7 @@
 }
 
 .preview-programs__item:first-child {
-  margin-right: 80px;
+  @media (min-width: $width-desktop) {
+    margin-right: 80px;
+  }
 }

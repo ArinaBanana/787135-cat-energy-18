@@ -2,13 +2,16 @@
   color: $color-white;
   background-color: $color-accent;
   font-size: $font-xxs;
+  font-family: $font-main;
   line-height: 20px;
   text-transform: uppercase;
-  border: none;
+  border: 0;
+  cursor: pointer;
 
   &--more {
     color: $color-lightgrey;
     background-color: $color-calm;
     text-decoration: none;
+    text-align: center;
   }
 }

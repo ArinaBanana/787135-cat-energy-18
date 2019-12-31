@@ -1,3 +1,13 @@
+.slider__pictures {
+  max-width: calc(100% - 40px);
+  //временно
+  margin: 0 auto;
+}
+
+.slider__img {
+  width: 100%;
+}
+
 .slider__label {
   font-size: $font-s;
   line-height: 20px;

@@ -1,5 +1,9 @@
 .catalog__title {
   @include none-indentation;
+  @include fixed-container;
+  @include fixed-indent;
   font-size: $font-xxl;
   line-height: 60px;
+  padding-top: 32px;
+  padding-bottom: 35px;
 }

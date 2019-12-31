@@ -1,9 +1,13 @@
 .page-footer {
-  @include fixed-indent;
   background-color: $color-calm;
 }
 
 .page-footer__bottom {
+  @include fixed-indent;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $width-desktop) {
+    @include fixed-container;
+  }
 }

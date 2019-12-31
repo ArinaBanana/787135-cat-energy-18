@@ -19,8 +19,12 @@
   flex-direction: column;
 
   @media (min-width: $width-tablet) {
-    border-bottom: none;
+    border-bottom: 0;
     margin-left: 36px;
+
+    &--active {
+      border-bottom: 2px solid $color-accent;
+    }
   }
 }
 
@@ -40,5 +44,9 @@
 
   @media (min-width: $width-desktop) {
     color: $color-white;
+  }
+
+  &--color {
+    color: $color-black;
   }
 }

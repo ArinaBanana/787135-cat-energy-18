@@ -1,5 +1,9 @@
 .preview-programs {
   @include fixed-indent;
+
+  @media (min-width: $width-desktop) {
+    @include fixed-container;
+  }
 }
 
 .preview-programs__list {
@@ -15,5 +19,11 @@
 
   @media (min-width: $width-desktop) {
     flex-basis: 50%;
+  }
+}
+
+.preview-programs__item:first-child {
+  @media (min-width: $width-desktop) {
+    margin-right: 80px;
   }
 }

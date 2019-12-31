@@ -1,10 +1,17 @@
+.programs-page {
+  @include fixed-indent;
+  @include fixed-container;
+}
+
 .programs-page__title {
   @include none-indentation;
   font-size: $font-xxl;
   line-height: 60px;
+  margin-bottom: 35px;
 }
 
 .programs-page__slogan {
   @include none-indentation;
   text-transform: uppercase;
+  margin-bottom: 39px;
 }

@@ -1,16 +1,141 @@
-.profile__fields {
+.profile__fieldset {
   @include none-indentation;
   border: 0;
+}
+
+.profile__fields {
+  @media (min-width: $width-tablet) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  &--info {
+    @media (min-width: $width-desktop) {
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+  }
+}
+
+.profile__items {
+  display: flex;
+  flex-direction: column;
+
+  &--border {
+    border: 1px solid $color-border;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 20px 0 20px 20px;
+
+    @media (min-width: $width-tablet) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    @media (min-width: $width-desktop) {
+      margin-left: 80px;
+    }
+  }
+
+  &--additionally {
+    @media (min-width: $width-tablet) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-bottom: 22px;
+    }
+  }
+
+  &--info {
+    @media (min-width: $width-desktop) {
+      width: 50%;
+    }
+  }
+
+  &--contacts {
+    @media (min-width: $width-desktop) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+}
+
+.profile__item {
+  margin-top: 0;
+  margin-bottom: 14px;
+
+  &--additionally {
+    @media (min-width: $width-tablet) {
+      width: 50%;
+      margin-bottom: 32px;
+    }
+
+    @media (min-width: $width-desktop) {
+      width: 25%;
+    }
+  }
+
+  &--contacts {
+    @media (min-width: $width-desktop) {
+      width: 50%;
+    }
+  }
 }
 
 .profile__title {
   @include none-indentation;
   font-size: $font-l;
   line-height: 1;
+  margin-bottom: 30px;
+  margin-top: 31px;
+  width: 100%;
+}
+
+.profile__inner {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $width-tablet) {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin: 0 auto;
+  }
 }
 
 .profile__explanation {
   @include none-indentation;
   color: $color-lightgrey;
   line-height: 16px;
+  text-align: center;
+  margin-bottom: 34px;
+
+  @media (min-width: $width-tablet) {
+    width: 55%;
+    margin-bottom: 0;
+    text-align: left;
+    padding-left: 61px;
+  }
+
+  @media (min-width: $width-desktop) {
+    text-align: left;
+    padding-left: 82px;
+  }
+}
+
+.profile__button {
+  padding-top: 13px;
+  padding-bottom: 11px;
+  margin-bottom: 23px;
+
+  @media (min-width: $width-tablet) {
+    width: 45%;
+    padding-top: 17px;
+    padding-bottom: 15px;
+    margin-bottom: 0;
+  }
 }

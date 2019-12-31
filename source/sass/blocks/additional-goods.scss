@@ -1,5 +1,32 @@
+.additional-goods {
+  @include fixed-container;
+  @include fixed-indent;
+
+  @media (min-width: $width-desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.additional-goods__list {
+  @media (min-width: $width-desktop) {
+    width: 75%;
+  }
+}
+
 .additional-goods__title {
   @include none-indentation;
   font-size: $font-l;
   line-height: 1;
+  border-bottom: 1px solid $color-border;
+  padding: 30px 0;
+
+  @media (min-width: $width-tablet) {
+    border-bottom: 0;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 100%;
+  }
 }

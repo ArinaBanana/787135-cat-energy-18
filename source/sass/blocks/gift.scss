@@ -1,19 +1,63 @@
 .gift {
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-color: $color-accent;
-
   width: 280px;
   height: 289px;
+
+  margin-top: 39px;
+  margin-bottom: 35px;
+  padding-top: 65px;
+
+  @media (min-width: $width-tablet) {
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    width: 708px;
+    height: 200px;
+    padding-top: 0;
+    padding-left: 91px;
+    padding-right: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $width-desktop) {
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+    width: 245px;
+    height: 289px;
+    padding: 65px 0 43px;
+    flex-direction: column;
+  }
 }
 
 .gift__text {
   color: $color-white;
-  font-size: $font-xxs;
+  font-size: $font-s;
   line-height: 20px;
   font-family: $font-extra;
+  text-align: center;
+  word-wrap: break-word;
+  width: 159px;
+  margin: 0 auto;
+  padding-top: 64px;
+
+  @media (min-width: $width-tablet) {
+    padding-top: 0;
+    margin: 0;
+    text-align: left;
+  }
+
+  @media (min-width: $width-desktop) {
+    text-align: center;
+  }
 }
 
 .gift__logo {
   width: 56px;
   height: 61px;
+  margin: 0 auto;
+  background: url("../../img/icon-gift.svg") no-repeat;
+
+  @media (min-width: $width-tablet) {
+    margin: 0;
+  }
 }

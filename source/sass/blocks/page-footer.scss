@@ -4,10 +4,7 @@
 
 .page-footer__bottom {
   @include fixed-indent;
+  @include fixed-container;
   display: flex;
   flex-direction: column;
-
-  @media (min-width: $width-desktop) {
-    @include fixed-container;
-  }
 }

@@ -4,10 +4,7 @@
 
 .example__inner {
   @include fixed-indent;
-
-  @media (min-width: $width-desktop) {
-    @include fixed-container;
-  }
+  @include fixed-container;
 }
 
 .example__title {

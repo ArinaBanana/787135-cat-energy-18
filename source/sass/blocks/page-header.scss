@@ -32,10 +32,6 @@
   font-size: 0;
   margin-left: auto;
 
-  &--hidden {
-    display: none;
-  }
-
   @media (min-width: $width-tablet) {
     display: none;
   }

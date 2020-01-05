@@ -9,12 +9,19 @@
 .page-header__inner {
   @include fixed-indent;
   border-bottom: 1px solid $color-border;
+  padding-top: 11px;
+  padding-bottom: 14px;
   display: flex;
   align-items: center;
 
   @media (min-width: $width-tablet) {
     border: 0;
     padding: 0;
+    padding-top: 24px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-top: 53px;
   }
 }
 
@@ -29,6 +36,7 @@
   height: 19px;
   background: url("../img/m-close-svg.svg") no-repeat;
   border: 0;
+  padding: 0;
   font-size: 0;
   margin-left: auto;
 

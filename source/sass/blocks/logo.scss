@@ -1,3 +1,18 @@
 .logo__img {
-  display: block;
+  display: flex;
+
+  &--header {
+    width: 191px;
+    height: 39px;
+
+    @media (min-width: $width-tablet) {
+      width: 174px;
+      height: 59px;
+    }
+
+    @media (min-width: $width-desktop) {
+      width: 203px;
+      height: 60px;
+    }
+  }
 }

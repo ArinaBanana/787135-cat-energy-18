@@ -17,8 +17,13 @@
 .preview-programs__item {
   margin-bottom: 20px;
 
+  @media (min-width: $width-tablet) {
+    margin-bottom: 30px;
+  }
+
   @media (min-width: $width-desktop) {
     flex-basis: 50%;
+    margin-bottom: 0;
   }
 }
 

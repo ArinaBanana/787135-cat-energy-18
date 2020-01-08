@@ -3,6 +3,7 @@
 
   @media (min-width: $width-desktop) {
     @include fixed-container;
+    margin-bottom: 79px;
   }
 }
 

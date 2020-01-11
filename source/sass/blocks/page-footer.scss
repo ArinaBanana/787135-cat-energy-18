@@ -7,4 +7,24 @@
   @include fixed-container;
   display: flex;
   flex-direction: column;
+  padding-top: 39px;
+  padding-bottom: 21px;
+
+  @media (min-width: $width-tablet) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+.page-footer__logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 31px;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 0;
+  }
 }

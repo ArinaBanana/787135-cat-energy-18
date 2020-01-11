@@ -1,42 +1,206 @@
 .example {
   background-color: $color-calm;
+
+  @media (min-width: $width-tablet) {
+    background-color: $color-white;
+    border-top: 1px solid $color-border;
+  }
+
+  @media (min-width: $width-desktop) {
+    border-top: 0;
+  }
 }
 
 .example__inner {
   @include fixed-indent;
   @include fixed-container;
+  padding-bottom: 39px;
+  padding-top: 22px;
+
+  @media (min-width: $width-tablet) {
+    padding-top: 51px;
+  }
+
+  @media (min-width: $width-desktop) {
+    position: relative;
+    padding-top: 0;
+  }
 }
 
 .example__title {
   @include none-indentation;
   font-size: $font-xxl;
   line-height: 60px;
+  font-weight: normal;
+  margin-bottom: 22px;
+
+  @media (min-width: $width-tablet) {
+    font-size: $font-xxxl;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 0;
+    position: absolute;
+    z-index: 1;
+  }
 }
 
 .example__about {
   @include none-indentation;
   color: $color-lightgrey;
   font-family: $font-extra;
+  margin-bottom: 27px;
+
+  @media (min-width: $width-tablet) {
+    font-size: $font-s;
+    line-height: 24px;
+    margin-bottom: 56px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 71px;
+  }
+}
+
+.example__preview {
+  @media (min-width: $width-tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 87px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin: 0;
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+.example__period {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 38px;
+
+  @media (min-width: $width-tablet) {
+    width: 60%;
+    margin: 0;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 62px;
+  }
 }
 
 .example__period-items {
   @include none-indentation;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .example__period-value {
   font-size: $font-l;
   line-height: 1;
   text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  border: 1px solid $color-border;
+  border-radius: 3px;
+  width: 124px;
+  padding: 15px 0;
+  word-break: break-word;
+
+  @media (min-width: $width-tablet) {
+    font-size: $font-xl;
+    line-height: 37px;
+    padding: 20px 0;
+    width: 164px;
+  }
 }
 
 .example__period-name {
   font-size: $font-xxs;
   line-height: 1;
   color: $color-lightgrey;
+  background-color: $color-calm;
   font-family: $font-extra;
+  text-align: center;
+  word-break: break-word;
+  display: flex;
+  width: 82px;
+  position: absolute;
+  top: 48px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (min-width: $width-tablet) {
+    font-size: $font-xs;
+    background-color: $color-white;
+    top: 70px;
+    padding-left: 8px;
+
+    &--weight {
+      width: 114px;
+    }
+
+    &--time {
+      width: 142px;
+    }
+  }
+
+  @media (min-width: $width-desktop) {
+    background-color: $color-calm;
+  }
 }
 
 .example__price {
+  @include none-indentation;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 38px;
+  word-break: break-word;
+
+  @media (min-width: $width-tablet) {
+    font-size: $font-larger-m;
+    line-height: 31px;
+    width: 25%;
+    text-align: right;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: auto;
+    display: flex;
+  }
+}
+
+.example__price-number {
+  @media (min-width: $width-desktop) {
+    margin-left: 64px;
+  }
+}
+
+.example__slider {
+  @media (min-width: $width-tablet) {
+    margin: 0 -30px;
+    padding-bottom: 68px;
+    background-color: $color-calm;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin: 0 -110px;
+    padding-bottom: 75px;
+  }
+}
+
+.example__wrapper-desktop {
+  @media (min-width: $width-desktop) {
+    position: absolute;
+    width: 50%;
+    bottom: 75px;
+    z-index: 1;
+  }
 }

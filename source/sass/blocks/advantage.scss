@@ -16,6 +16,7 @@
   @include none-indentation;
   font-size: $font-xxl;
   line-height: 60px;
+  font-weight: normal;
   margin-bottom: 24px;
 
   @media (min-width: $width-tablet) {

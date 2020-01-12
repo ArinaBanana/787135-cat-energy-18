@@ -7,6 +7,11 @@
 .copyright__academy {
   color: $color-lightgrey;
   text-decoration: none;
-  font-size: $font-xxs;
+  font-family: $font-extra;
+  font-size: $font-s;
   line-height: 1;
+
+  @media (min-width: $width-tablet) {
+    margin-right: 23px;
+  }
 }

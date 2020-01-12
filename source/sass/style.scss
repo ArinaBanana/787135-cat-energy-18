@@ -2,6 +2,8 @@
 @import "base/mixins";
 @import "base/font";
 @import "base/layout";
+@import "base/image";
+@import "blocks/button";
 @import "blocks/page-header";
 @import "blocks/main-nav";
 @import "blocks/preview";
@@ -14,7 +16,6 @@
 @import "blocks/catalog";
 @import "blocks/card-list";
 @import "blocks/product";
-@import "blocks/button";
 @import "blocks/additional-goods";
 @import "blocks/product-additional";
 @import "blocks/gift";
@@ -25,3 +26,5 @@
 @import "blocks/profile";
 @import "blocks/field";
 @import "blocks/logo";
+@import "blocks/range";
+@import "blocks/map";

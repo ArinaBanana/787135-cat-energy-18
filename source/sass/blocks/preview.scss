@@ -3,15 +3,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  //position: relative;
 
   @media (min-width: $width-tablet) {
     @include fixed-container;
     align-items: start;
+    position: relative;
   }
 
   @media (min-width: $width-desktop) {
     flex-direction: row;
+    margin-bottom: 135px;
+    margin-top: 34px;
   }
 }
 
@@ -21,10 +23,12 @@
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-color: $color-accent;
+  margin-bottom: 135px;
 
   @media (min-width: $width-tablet) {
     width: 0;
     height: 0;
+    margin-bottom: 0;
     background: none;
   }
 
@@ -38,7 +42,7 @@
     order: 2;
     position: absolute;
     z-index: -1;
-    top: -100px;
+    top: -147px;
     left: 50%;
   }
 }
@@ -49,11 +53,16 @@
   position: absolute;
 
   @media (min-width: $width-tablet) {
-    position: static;
+    position: relative;
+    margin-bottom: 20px;
+    padding-top: 61px;
+    padding-left: 90px;
   }
 
   @media (min-width: $width-desktop) {
-    position: static;
+    margin-bottom: 0;
+    padding-left: 83px;
+    padding-top: 79px;
   }
 }
 
@@ -63,16 +72,22 @@
   font-size: $font-xxl;
   line-height: 1;
   text-align: center;
+  font-weight: normal;
   padding-bottom: 19px;
+  padding-top: 29px;
+  word-break: break-word;
 
   @media (min-width: $width-tablet) {
     color: $color-black;
     text-align: start;
     font-size: $font-xxxl;
+    padding: 0;
+    margin-bottom: 33px;
+    width: 70%;
   }
 
   @media (min-width: $width-desktop) {
-    padding-bottom: 33px;
+    width: 80%;
     font-size: $font-xxxl;
   }
 }
@@ -88,11 +103,10 @@
     color: $color-black;
     text-align: start;
     font-size: $font-larger-m;
-    padding-bottom: 20px;
   }
 
   @media (min-width: $width-desktop) {
-    padding-bottom: 53px;
+    margin-bottom: 53px;
   }
 }
 
@@ -118,11 +132,21 @@
   color: $color-white;
   text-decoration: none;
   text-transform: uppercase;
-  margin-top: 135px;
+  padding: 10px 0;
+  margin-bottom: 22px;
+  width: 100%;
+  text-align: center;
 
   @media (min-width: $width-tablet) {
-    margin-top: 0;
+    font-size: $font-larger-m;
+    width: auto;
+    padding: 17px 27px 15px;
     position: absolute;
-    top: 248px;
+    left: 113px;
+    top: 276px;
+  }
+
+  @media (min-width: $width-desktop) {
+    top: 299px;
   }
 }

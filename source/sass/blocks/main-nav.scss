@@ -26,10 +26,16 @@
       border-bottom: 2px solid $color-accent;
     }
   }
+
+  @media (min-width: $width-desktop) {
+    &--border-color {
+      border-bottom-color: $color-white;
+    }
+  }
 }
 
 .main-nav__link {
-  padding-top: 22px;
+  padding-top: 23px;
   padding-bottom: 22px;
   text-align: center;
   font-size: $font-larger-m;
@@ -40,10 +46,14 @@
 
   @media (min-width: $width-tablet) {
     font-size: $font-m;
+    padding: 0;
+    padding-top: 47px;
   }
 
   @media (min-width: $width-desktop) {
     color: $color-white;
+    font-size: $font-larger-m;
+    padding-top: 77px;
   }
 
   &--color {

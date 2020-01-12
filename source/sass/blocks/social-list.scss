@@ -2,8 +2,58 @@
   @include list-reset;
   display: flex;
   align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  border-top: 1px solid $color-border;
+  border-bottom: 1px solid $color-border;
+
+  @media (min-width: $width-tablet) {
+    border: 0;
+    margin-bottom: 0;
+    padding: 0;
+  }
+}
+
+.social-list__item:not(:first-child) {
+  margin-left: 40px;
 }
 
 .social-list__link {
   text-decoration: none;
+  cursor: pointer;
+}
+
+.social-list__img {
+  fill: $color-icon;
+
+  &--vk {
+    width: 22px;
+    height: 12px;
+
+    @media (min-width: $width-tablet) {
+      width: 30px;
+      height: 16px;
+    }
+  }
+
+  &--inst {
+    width: 17px;
+    height: 17px;
+
+    @media (min-width: $width-tablet) {
+      width: 23px;
+      height: 23px;
+    }
+  }
+
+  &--fb {
+    width: 10px;
+    height: 19px;
+
+    @media (min-width: $width-tablet) {
+      width: 14px;
+      height: 28px;
+    }
+  }
 }

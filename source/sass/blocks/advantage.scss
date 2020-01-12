@@ -1,16 +1,32 @@
 .advantage {
   @include fixed-indent;
+  @include fixed-container;
+  padding-bottom: 22px;
+
+  @media (min-width: $width-tablet) {
+    padding-bottom: 10px;
+  }
 
   @media (min-width: $width-desktop) {
-    @include fixed-container;
+    margin-bottom: 90px;
   }
 }
 
 .advantage__title {
   @include none-indentation;
-  text-transform: uppercase;
   font-size: $font-xxl;
   line-height: 60px;
+  font-weight: normal;
+  margin-bottom: 24px;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 18px;
+    font-size: $font-xxxl;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 63px;
+  }
 }
 
 .advantage__list {
@@ -26,13 +42,35 @@
 .advantage__item {
   display: flex;
   margin-bottom: 20px;
+  position: relative;
 
   @media (min-width: $width-tablet) {
-    flex-basis: 35%;
+    flex-basis: 40%;
+    height: 100%;
+    flex-wrap: wrap;
+    margin: 45px 0;
+    padding-bottom: 44px;
   }
 
   @media (min-width: $width-desktop) {
-    flex-basis: 25%;
+    flex-basis: 20%;
+    margin: 0;
+  }
+}
+
+.advantage__item:not(:nth-child(2n)):not(:nth-child(4n)) {
+  @media (min-width: $width-tablet) {
+    margin-right: 101px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-right: 0;
+  }
+}
+
+.advantage__item:not(:first-child) {
+  @media (min-width: $width-desktop) {
+    margin-left: 80px;
   }
 }
 
@@ -40,12 +78,87 @@
   width: 60px;
   height: 60px;
   background-color: $color-accent;
+
+  &--health {
+    background-image: url("../img/advantage-leaf@1x.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  &--water {
+    background-image: url("../img/advantage-powder@1x.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  &--food {
+    background-image: url("../img/advantage-dining@1x.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  &--time {
+    background-image: url("../img/advantage-clock@1x.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $width-tablet) {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 37px;
+  }
+}
+
+.advantage__icon-number {
+  @media (min-width: $width-tablet) {
+    width: 121px;
+    height: 233px;
+    position: absolute;
+    top: 0;
+    left: 124px;
+    z-index: -1;
+  }
+
+  &--one {
+    @media (min-width: $width-tablet) {
+      background: url("../img/1.png") 50% 50% no-repeat;
+    }
+  }
+
+  &--two {
+    @media (min-width: $width-tablet) {
+      background: url("../img/2.png") 50% 50% no-repeat;
+    }
+  }
+
+  &--three {
+    @media (min-width: $width-tablet) {
+      background: url("../img/3.png") 50% 50% no-repeat;
+    }
+  }
+
+  &--four {
+    @media (min-width: $width-tablet) {
+      background: url("../img/4.png") 50% 50% no-repeat;
+    }
+  }
 }
 
 .advantage__text {
   @include none-indentation;
   font-family: $font-extra;
-
+  color: $color-lightgrey;
   margin-left: 20px;
   flex-basis: calc(100% - 60px);
+
+  @media (min-width: $width-tablet) {
+    margin-left: 0;
+    font-size: $font-s;
+    line-height: 24px;
+  }
+
+  @media (min-width: $width-desktop) {
+    flex-basis: 100%;
+  }
 }

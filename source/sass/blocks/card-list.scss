@@ -1,9 +1,5 @@
 .card-list {
-  @include list-reset;
-  @include fixed-container;
-
   @media (min-width: $width-tablet) {
-    @include fixed-indent;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

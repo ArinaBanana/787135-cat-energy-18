@@ -1,9 +1,27 @@
+.catalog {
+  @include fixed-container;
+
+  @media (min-width: $width-tablet) {
+    @include fixed-indent;
+  }
+}
+
+.catalog__list {
+  @include list-reset;
+}
+
 .catalog__title {
   @include none-indentation;
   @include fixed-container;
   @include fixed-indent;
   font-size: $font-xxl;
+  font-weight: normal;
   line-height: 60px;
-  padding-top: 32px;
-  padding-bottom: 35px;
+  padding-top: 20px;
+  padding-bottom: 24px;
+
+  @media (min-width: $width-tablet) {
+    font-size: $font-xxxl;
+    padding: 65px 0 75px;
+  }
 }

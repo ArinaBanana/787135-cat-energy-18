@@ -57,16 +57,25 @@
               </div>
               <div class="profile__items profile__items--border profile__items--info">
                 <p class="profile__item field">
-                  <input class="field__radio" type="radio" id="thin-radio" name="radio" value="thin">
-                  <label class="field__label" for="thin-radio">Похудение</label>
+                  <label class="field__label field__label--radio" for="thin-radio">
+                    <input class="visually-hidden" type="radio" id="thin-radio" name="radio" value="thin" checked>
+                    <span class="field__radio"></span>
+                    Похудение
+                  </label>
                 </p>
                 <p class="profile__item field">
-                  <input class="field__radio" type="radio" id="weight-radio" name="radio" value="weight">
-                  <label class="field__label" for="weight-radio">Набор массы</label>
+                  <label class="field__label field__label--radio" for="weight-radio">
+                    <input class="visually-hidden" type="radio" id="weight-radio" name="radio" value="weight">
+                    <span class="field__radio"></span>
+                    Набор массы
+                  </label>
                 </p>
                 <p class="profile__item field">
-                  <input class="field__radio" type="radio" id="advice-radio" name="radio" value="advice">
-                  <label class="field__label" for="advice-radio">Не знаю (Нужен ваш совет)</label>
+                  <label class="field__label field__label--radio" for="advice-radio">
+                    <input class="visually-hidden" type="radio" id="advice-radio" name="radio" value="advice">
+                    <span class="field__radio"></span>
+                    Не знаю (Нужен ваш совет)
+                  </label>
                 </p>
               </div>
             </div>
@@ -100,20 +109,32 @@
               <div class="profile__items profile__items--additionally">
                 <p class="profile__title">Дополнительно</p>
                 <p class="profile__item profile__item--additionally field">
-                  <input class="field__checkbox" type="checkbox" id="sweetener-check" name="check" value="sweetener">
-                  <label class="field__label" for="sweetener-check">Сахарозаменитель</label>
+                  <label class="field__label field__label--check" for="sweetener-check">
+                    <input class="visually-hidden" type="checkbox" id="sweetener-check" name="check" value="sweetener" checked>
+                    <span class="field__checkbox"></span>
+                    Сахарозаменитель
+                  </label>
                 </p>
                 <p class="profile__item profile__item--additionally field">
-                  <input class="field__checkbox" type="checkbox" id="water-check" name="check" value="water">
-                  <label class="field__label" for="water-check">Питьевая вода</label>
+                  <label class="field__label field__label--check" for="water-check">
+                    <input class="visually-hidden" type="checkbox" id="water-check" name="check" value="water">
+                    <span class="field__checkbox"></span>
+                    Питьевая вода
+                  </label>
                 </p>
                 <p class="profile__item profile__item--additionally field">
-                  <input class="field__checkbox" type="checkbox" id="milk-check" name="check" value="milk">
-                  <label class="field__label" for="milk-check">Молоко</label>
+                  <label class="field__label field__label--check" for="milk-check">
+                    <input class="visually-hidden" type="checkbox" id="milk-check" name="check" value="milk">
+                    <span class="field__checkbox"></span>
+                    Молоко
+                  </label>
                 </p>
                 <p class="profile__item profile__item--additionally field">
-                  <input class="field__checkbox" type="checkbox" id="vitamins-check" name="check" value="vitamins">
-                  <label class="field__label" for="vitamins-check">Витамины</label>
+                  <label class="field__label field__label--check" for="vitamins-check">
+                    <input class="visually-hidden" type="checkbox" id="vitamins-check" name="check" value="vitamins">
+                    <span class="field__checkbox"></span>
+                    Витамины
+                  </label>
                 </p>
               </div>
             </div>
@@ -129,7 +150,8 @@
       <section class="page-footer__contacts contacts">
         <div class="contacts__wrapper contacts__wrapper--bg">
           <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
-          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></p>
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8
+            <span class="contacts__city">Санкт-Петербург</span></p>
         </div>
         <div class="contacts__map map">
           <picture>

@@ -1,18 +1,49 @@
 .programs-page {
   @include fixed-indent;
   @include fixed-container;
+
+  @media (min-width: $width-tablet) {
+    margin: 0 40px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin: 0 auto;
+  }
 }
 
 .programs-page__title {
   @include none-indentation;
   font-size: $font-xxl;
+  font-weight: normal;
   line-height: 60px;
   margin-bottom: 24px;
   margin-top: 19px;
+
+  @media (min-width: $width-tablet) {
+    font-size: $font-xxxl;
+    margin-top: 63px;
+    margin-bottom: 48px;
+    margin-left: -40px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-left: 0;
+  }
 }
 
 .programs-page__slogan {
   @include none-indentation;
   text-transform: uppercase;
   margin-bottom: 36px;
+
+  @media (min-width: $width-tablet) {
+    font-size: $font-larger-m;
+    line-height: 30px;
+    width: 60%;
+    margin-bottom: 64px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 30%;
+  }
 }

@@ -10,11 +10,21 @@
   margin-right: 10px;
   white-space: nowrap;
 
+  @media (min-width: $width-tablet) {
+    font-size: $font-larger-m;
+    line-height: 1;
+  }
+
   &--check {
     position: relative;
     padding-left: 46px;
     cursor: pointer;
     line-height: 30px;
+
+    @media (min-width: $width-tablet) {
+      line-height: 40px;
+      padding-left: 60px;
+    }
   }
 
   &--radio {
@@ -22,6 +32,11 @@
     cursor: pointer;
     padding-left: 46px;
     line-height: 30px;
+
+    @media (min-width: $width-tablet) {
+      line-height: 40px;
+      padding-left: 60px;
+    }
   }
 }
 
@@ -33,6 +48,11 @@
   width: 30px;
   height: 30px;
   border: 1px solid $color-border;
+
+  @media (min-width: $width-tablet) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .field__label input[type="checkbox"]:checked + .field__checkbox {
@@ -49,6 +69,11 @@
   height: 30px;
   border: 1px solid $color-border;
   border-radius: 50%;
+
+  @media (min-width: $width-tablet) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .field__label input[type="radio"]:checked + .field__radio::after {
@@ -61,6 +86,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  @media (min-width: $width-tablet) {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .field__input {
@@ -71,8 +101,8 @@
   flex-basis: 100%;
 
   @media (min-width: $width-tablet) {
-    padding-top: 17px;
-    padding-bottom: 17px;
+    padding-top: 19px;
+    padding-bottom: 18px;
     padding-left: 20px;
   }
 }
@@ -81,6 +111,11 @@
   text-transform: uppercase;
   font-family: $font-main;
   color: $color-lightgrey;
+
+  @media (min-width: $width-tablet) {
+    font-size: $font-larger-m;
+    line-height: 1;
+  }
 }
 
 .field__textarea {
@@ -96,7 +131,10 @@
   padding-left: 16px;
 
   @media (min-width: $width-tablet) {
+    font-size: $font-larger-m;
+    line-height: 30px;
     padding-top: 17px;
     padding-left: 20px;
+    height: 174px;
   }
 }

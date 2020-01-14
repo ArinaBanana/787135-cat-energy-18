@@ -55,22 +55,22 @@
                   <input class="field__input" type="text" id="age" name="age" placeholder="7">
                 </p>
               </div>
-              <div class="profile__items profile__items--border profile__items--info">
-                <p class="profile__item field">
+              <div class="profile__items profile__items--programs">
+                <p class="profile__item profile__item--program field">
                   <label class="field__label field__label--radio" for="thin-radio">
                     <input class="visually-hidden" type="radio" id="thin-radio" name="radio" value="thin" checked>
                     <span class="field__radio"></span>
                     Похудение
                   </label>
                 </p>
-                <p class="profile__item field">
+                <p class="profile__item profile__item--program field">
                   <label class="field__label field__label--radio" for="weight-radio">
                     <input class="visually-hidden" type="radio" id="weight-radio" name="radio" value="weight">
                     <span class="field__radio"></span>
                     Набор массы
                   </label>
                 </p>
-                <p class="profile__item field">
+                <p class="profile__item profile__item--program field">
                   <label class="field__label field__label--radio" for="advice-radio">
                     <input class="visually-hidden" type="radio" id="advice-radio" name="radio" value="advice">
                     <span class="field__radio"></span>
@@ -85,16 +85,18 @@
             <div class="profile__fields">
               <div class="profile__items profile__items--contacts">
                 <p class="profile__title profile__title--contacts">Контактные данные (владельца кота)</p>
-                <p class="profile__item profile__item--contacts field">
-                  <label class="field__label" for="mail">E-mail:*</label>
-                  <input class="field__input" type="text" id="mail" name="mail" placeholder="kuklachev@gmail.com">
-                </p>
-                <p class="profile__item profile__item--contacts field">
-                  <label class="field__label" for="phone">Телефон:*</label>
-                  <input class="field__input" type="text" id="phone" name="phone" placeholder="8 (960) 900-60-90">
-                </p>
+                <div class="profile__wrapper-contacts">
+                  <p class="profile__item profile__item--contacts field">
+                    <label class="field__label" for="mail">E-mail:*</label>
+                    <input class="field__input" type="text" id="mail" name="mail" placeholder="kuklachev@gmail.com">
+                  </p>
+                  <p class="profile__item profile__item--contacts field">
+                    <label class="field__label" for="phone">Телефон:*</label>
+                    <input class="field__input" type="text" id="phone" name="phone" placeholder="8 (960) 900-60-90">
+                  </p>
+                </div>
               </div>
-              <div class="profile__items">
+              <div class="profile__items profile__items--comment">
                 <p class="profile__title profile__title--comment">Комментарий</p>
                 <p class="profile__item field">
                   <label for="text"></label>

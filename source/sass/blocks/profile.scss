@@ -62,6 +62,7 @@
 
   &--contacts {
     padding-bottom: 18px;
+    position: relative;
 
     @media (min-width: $width-tablet) {
       padding-bottom: 49px;

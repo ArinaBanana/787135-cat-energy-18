@@ -41,11 +41,7 @@
     width: 0;
 
     @media (min-width: $width-tablet) {
-      width: 352px;
-    }
-
-    @media (min-width: $width-desktop) {
-      width: 325px;
+      width: 50%;
     }
   }
 
@@ -54,11 +50,7 @@
     width: 280px;
 
     @media (min-width: $width-tablet) {
-      width: 338px;
-    }
-
-    @media (min-width: $width-desktop) {
-      width: 365px;
+      width: 50%;
     }
   }
 }
@@ -67,6 +59,7 @@
   width: 280px;
   position: absolute;
   top: 0;
+  overflow: hidden;
 
   &--after {
     right: 0;

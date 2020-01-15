@@ -1,13 +1,13 @@
 .preview {
-  @include fixed-indent;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 
   @media (min-width: $width-tablet) {
     @include fixed-container;
+    @include fixed-indent;
     align-items: start;
-    position: relative;
   }
 
   @media (min-width: $width-desktop) {
@@ -18,12 +18,14 @@
 }
 
 .preview__background {
-  width: 320px;
+  width: 100%;
   height: 305px;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-color: $color-accent;
+  background-size: cover;
   margin-bottom: 135px;
+  overflow: hidden;
 
   @media (min-width: $width-tablet) {
     width: 0;
@@ -38,7 +40,6 @@
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-color: $color-accent;
-
     order: 2;
     position: absolute;
     z-index: -1;
@@ -60,6 +61,7 @@
   }
 
   @media (min-width: $width-desktop) {
+    position: absolute;
     margin-bottom: 0;
     padding-left: 83px;
     padding-top: 79px;
@@ -87,7 +89,6 @@
   }
 
   @media (min-width: $width-desktop) {
-    width: 80%;
     font-size: $font-xxxl;
   }
 }
@@ -112,7 +113,7 @@
 
 .preview__pictures {
   position: absolute;
-  top: 431px;
+  top: 168px;
   left: 50%;
   transform: translateX(-50%);
 
@@ -122,13 +123,15 @@
   }
 
   @media (min-width: $width-desktop) {
-    top: 142px;
+    top: 0;
+    position: relative;
     left: 50%;
-    transform: translateX(-40%);
+    transform: translateX(-30%);
   }
 }
 
 .preview__btn {
+  @include fixed-indent;
   color: $color-white;
   text-decoration: none;
   text-transform: uppercase;
@@ -149,4 +152,10 @@
   @media (min-width: $width-desktop) {
     top: 299px;
   }
+}
+
+.preview__btn-inner {
+  @include fixed-indent;
+  display: flex;
+  width: 100%;
 }

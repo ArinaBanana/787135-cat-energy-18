@@ -154,8 +154,8 @@
     height: 200px;
     order: 2;
     position: absolute;
-    left: 400px;
     top: 0;
+    right: 0;
   }
 
   @media (min-width: $width-desktop) {

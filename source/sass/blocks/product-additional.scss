@@ -38,6 +38,7 @@
   line-height: 1;
   text-transform: uppercase;
   margin-bottom: 15px;
+  word-break: break-word;
 
   @media (min-width: $width-tablet) {
     font-size: $font-larger-m;
@@ -45,6 +46,7 @@
 
   @media (min-width: $width-desktop) {
     margin-bottom: 0;
+    width: 285px;
   }
 }
 
@@ -65,6 +67,7 @@
 
   @media (min-width: $width-desktop) {
     margin-bottom: 0;
+    width: 40%;
   }
 }
 

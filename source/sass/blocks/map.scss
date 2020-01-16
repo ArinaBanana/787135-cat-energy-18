@@ -1,5 +1,7 @@
 .map {
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .map::before {

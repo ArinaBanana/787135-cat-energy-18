@@ -57,3 +57,11 @@
     }
   }
 }
+
+.social-list__img:hover {
+  fill: $color-accent;
+}
+
+.social-list__img:active {
+  opacity: 0.3;
+}

@@ -15,3 +15,19 @@
     text-align: center;
   }
 }
+
+.button:hover {
+  background-color: #5eaa2f;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button--more:hover {
+  background-color: #ebebeb;
+}
+
+.button--more:active {
+  color: rgba(68, 68, 68, 0.3);
+}

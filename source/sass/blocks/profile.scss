@@ -4,6 +4,8 @@
 }
 
 .profile__fields {
+  position: relative;
+
   @media (min-width: $width-tablet) {
     display: flex;
     flex-direction: column;
@@ -21,6 +23,7 @@
 .profile__items {
   display: flex;
   flex-direction: column;
+  position: relative;
 
   &--programs {
     border: 1px solid $color-border;
@@ -62,7 +65,6 @@
 
   &--contacts {
     padding-bottom: 18px;
-    position: relative;
 
     @media (min-width: $width-tablet) {
       padding-bottom: 49px;
@@ -136,7 +138,7 @@
   line-height: 1;
   margin-bottom: 30px;
   width: 100%;
-  position: relative;
+  word-break: break-word;
 
   @media (min-width: $width-tablet) {
     font-size: $font-xxl;
@@ -150,80 +152,111 @@
   }
 }
 
-.profile__title::before {
+.profile__line-contacts::before {
+  content: " ";
+  position: absolute;
+  top: 12px;
+  right: 0;
+  width: 35%;
+  height: 3px;
+  margin: 0 -19px;
+  background-color: $color-accent;
+  z-index: -1;
+
+  @media (min-width: $width-tablet) {
+    margin: 0 -69px;
+    top: 20px;
+    width: 25%;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin: 0 -30px;
+    width: 55%;
+  }
+}
+
+.profile__line-contacts::after {
   @media (min-width: $width-tablet) {
     content: " ";
     position: absolute;
-    top: 50%;
-    left: -70px;
-    width: 5%;
+    width: 40px;
     height: 3px;
     background-color: $color-accent;
-  }
-
-  @media (min-width: $width-desktop) {
-    left: -110px;
-  }
-}
-
-.profile__title--contacts::after {
-  content: " ";
-  position: absolute;
-  top: 30%;
-  right: -20px;
-  width: 35%;
-  height: 3px;
-  background-color: $color-accent;
-
-  @media (min-width: $width-tablet) {
-    top: 50%;
-    width: 25%;
-    right: -70px;
-  }
-
-  @media (min-width: $width-desktop) {
-    width: 62%;
-    right: -110px;
+    top: 20px;
+    left: 0;
+    margin: 0 -70px;
   }
 }
 
-.profile__title--comment::after {
+.profile__line-comment::before {
   content: " ";
   position: absolute;
-  top: 50%;
-  right: -20px;
+  top: 12px;
+  right: 0;
   width: 55%;
   height: 3px;
+  margin: 0 -19px;
   background-color: $color-accent;
+  z-index: -1;
 
   @media (min-width: $width-tablet) {
-    right: -70px;
+    margin: 0 -69px;
+    top: 18px;
     width: 75%;
   }
 
   @media (min-width: $width-desktop) {
-    right: -110px;
-    width: 90%;
+    margin: 0 -30px;
+    width: 85%;
   }
 }
 
-.profile__title--add::after {
+.profile__line-comment::after {
+  @media (min-width: $width-tablet) {
+    content: " ";
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background-color: $color-accent;
+    top: 20px;
+    left: 0;
+    margin: 0 -70px;
+  }
+}
+
+.profile__line-add::before {
   content: " ";
   position: absolute;
-  top: 50%;
-  right: -20px;
-  width: 45%;
+  top: 12px;
+  right: 0;
+  width: 50%;
   height: 3px;
+  margin: 0 -19px;
   background-color: $color-accent;
+  z-index: -1;
 
   @media (min-width: $width-tablet) {
-    right: -70px;
+    margin: 0 -69px;
+    top: 18px;
     width: 70%;
   }
 
   @media (min-width: $width-desktop) {
-    right: -110px;
-    width: 87%;
+    margin: 0 -30px;
+    width: 80%;
+  }
+}
+
+.profile__line-add::after {
+  @media (min-width: $width-tablet) {
+    content: " ";
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background-color: $color-accent;
+    top: 20px;
+    left: 0;
+    margin: 0 -70px;
   }
 }
 

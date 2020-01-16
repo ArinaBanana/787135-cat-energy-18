@@ -12,7 +12,6 @@
 
 .catalog__title {
   @include none-indentation;
-  @include fixed-container;
   @include fixed-indent;
   font-size: $font-xxl;
   font-weight: normal;

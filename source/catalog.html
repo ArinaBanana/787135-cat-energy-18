@@ -10,7 +10,7 @@
   <body>
     <header class="page-header">
       <div class="page-header__inner">
-        <a class="page-header__logo logo" href="#">
+        <a class="page-header__logo logo" href="index.html">
           <picture>
             <source srcset="img/logo-desktop.svg" media="(min-width: 1280px)">
             <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
@@ -308,12 +308,13 @@
           <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
           <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></p>
         </div>
-        <div class="contacts__map map" id="map">
-          <picture>
+        <div class="contacts__map map">
+          <div class="map__interactive-map" id="map"></div>
+          <picture class="map__picture">
             <source srcset="img/bg-map-desktop@1x.png" media="(min-width: 1280px)">
             <source srcset="img/bg-map-tablet@1x.png" media="(min-width: 768px)">
             <source srcset="img/bg-map-mobile@1x.png" media="(min-width: 320px)">
-            <img class="image" src="img/bg-map-desktop@1x.png" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+            <img class="image map__img" src="img/bg-map-desktop@1x.png" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
           </picture>
         </div>
       </section>
@@ -357,6 +358,6 @@
         </div>
       </div>
     </footer>
-    <script src="./js/map.js"></script>
+    <script src="js/map.js"></script>
   </body>
 </html>

@@ -156,17 +156,18 @@
           <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
           <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></p>
         </div>
-        <div class="contacts__map map" id="map">
-          <picture>
+        <div class="contacts__map map">
+          <div class="map__interactive-map" id="map"></div>
+          <picture class="map__picture">
             <source srcset="img/bg-map-desktop@1x.png" media="(min-width: 1280px)">
             <source srcset="img/bg-map-tablet@1x.png" media="(min-width: 768px)">
             <source srcset="img/bg-map-mobile@1x.png" media="(min-width: 320px)">
-            <img class="image" src="img/bg-map-desktop@1x.png" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+            <img class="image map__img" src="img/bg-map-desktop@1x.png" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
           </picture>
         </div>
       </section>
       <div class="page-footer__bottom">
-        <a class="page-footer__logo logo">
+        <a class="page-footer__logo logo" href="#">
           <img class="logo__img logo__img--footer" src="img/logo-footer.svg" alt="Кэт Энерджи" width="128" height="24">
         </a>
         <ul class="page-footer__social-list social-list">
@@ -205,6 +206,6 @@
         </div>
       </div>
     </footer>
-    <script src="./js/map.js"></script>
+    <script src="js/map.js"></script>
   </body>
 </html>

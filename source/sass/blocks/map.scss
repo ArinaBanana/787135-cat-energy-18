@@ -4,6 +4,14 @@
   justify-content: center;
 }
 
+.map__interactive-map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 .map::before {
   content: " ";
   position: absolute;
@@ -23,4 +31,12 @@
   @media (min-width: $width-desktop) {
     left: 73%;
   }
+}
+
+.map__img {
+  width: 100%;
+}
+
+.map__picture {
+  width: 100%;
 }

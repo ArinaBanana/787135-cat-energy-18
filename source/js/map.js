@@ -1,7 +1,7 @@
-ymaps.ready(init);
+// ymaps.ready(init);
 
 function getIconSize() {
-  var windowWidth = document.body.clientWidth;
+  var windowWidth = window.innerWidth;
   if (windowWidth < 768) {
     return [55, 53]
   } else {

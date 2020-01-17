@@ -1,6 +1,15 @@
 .field {
   display: flex;
   align-items: center;
+  color: $color-darkgrey;
+}
+
+.field:active {
+  color: $color-accent;
+}
+
+.field:invalid {
+  color: $color-error;
 }
 
 .field__label {
@@ -136,7 +145,7 @@
   height: 14px;
   position: absolute;
   right: 13px;
-  fill: #222222;
+  fill: currentColor;
 
   @media (min-width: $width-desktop) {
     right: 0;
@@ -147,9 +156,9 @@
 .field__icon-phone {
   position: absolute;
   right: 10px;
-  fill: #222222;
   width: 21px;
   height: 21px;
+  fill: currentColor;
 }
 
 .field__input::placeholder {

@@ -3,6 +3,11 @@
 
   @media (min-width: $width-tablet) {
     border-bottom: 0;
+    flex-basis: 50%;
+  }
+
+  @media (min-width: $width-desktop) {
+    flex-basis: 25%;
   }
 }
 
@@ -24,8 +29,7 @@
   @media (min-width: $width-tablet) {
     position: relative;
     background-color: $color-calm;
-    width: 324px;
-    margin: 70px 0;
+    margin: 70px 30px;
     padding-bottom: 40px;
   }
 

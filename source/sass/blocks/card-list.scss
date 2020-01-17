@@ -3,5 +3,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 0 -30px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin: 0;
   }
 }

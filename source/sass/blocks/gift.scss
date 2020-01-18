@@ -3,10 +3,8 @@
   background-color: $color-accent;
   width: 280px;
   height: 289px;
-
-  margin-top: 39px;
-  margin-bottom: 35px;
   padding-top: 65px;
+  margin: 0 auto;
 
   @media (min-width: $width-tablet) {
     background-image: url("../img/gift-photo-tablet@1x.jpg");
@@ -26,6 +24,7 @@
     height: 289px;
     padding: 65px 0 43px;
     flex-direction: column;
+    margin: 0;
   }
 }
 

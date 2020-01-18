@@ -1,11 +1,12 @@
 .card-list {
-  @include list-reset;
-  @include fixed-container;
-
   @media (min-width: $width-tablet) {
-    @include fixed-indent;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 0 -30px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin: 0;
   }
 }

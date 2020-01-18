@@ -10,7 +10,7 @@ html {
 
 body {
   @include none-indentation;
-  font-family: $font-main;
+  font-family: $font-main, "Arial", sans-serif;
   font-size: $font-xs;
   line-height: 18px;
 }

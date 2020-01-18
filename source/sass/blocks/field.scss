@@ -1,6 +1,7 @@
 .field {
   display: flex;
   align-items: center;
+  color: $color-darkgrey;
 }
 
 .field__label {
@@ -9,26 +10,166 @@
   color: $color-darkgrey;
   margin-right: 10px;
   white-space: nowrap;
+
+  @media (min-width: $width-tablet) {
+    font-size: $font-larger-m;
+    line-height: 1;
+  }
+
+  &--check {
+    position: relative;
+    padding-left: 46px;
+    cursor: pointer;
+    line-height: 30px;
+
+    @media (min-width: $width-tablet) {
+      line-height: 40px;
+      padding-left: 60px;
+    }
+  }
+
+  &--radio {
+    position: relative;
+    cursor: pointer;
+    padding-left: 46px;
+    line-height: 30px;
+
+    @media (min-width: $width-tablet) {
+      line-height: 40px;
+      padding-left: 60px;
+    }
+  }
+}
+
+.field__label input[type="checkbox"] + .field__checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $color-border;
+
+  @media (min-width: $width-tablet) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.field__label:active {
+  color: rgba(34, 34, 34, 0.3);
+}
+
+.field__label input[type="checkbox"]:hover + .field__checkbox,
+.field__label input[type="radio"]:hover + .field__radio {
+  border: 1px solid #bababa;
+}
+
+.field__label input[type="checkbox"]:active + .field__checkbox,
+.field__label input[type="radio"]:active + .field__radio {
+  opacity: 0.3;
+}
+
+.field__label input[type="checkbox"]:checked + .field__checkbox {
+  background: url("../img/icon-tick.svg") 50% 50% no-repeat;
+  background-size: 22px 17px;
+}
+
+.field__label input[type="radio"] + .field__radio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $color-border;
+  border-radius: 50%;
+
+  @media (min-width: $width-tablet) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.field__label input[type="radio"]:checked + .field__radio::after {
+  content: " ";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: $color-accent;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @media (min-width: $width-tablet) {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .field__input {
-  border: 1px solid $color-border;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 16px;
+  border: 1px solid #e6e6e6;
+  padding: 14px 13px 14px 16px;
   flex-basis: 100%;
 
   @media (min-width: $width-tablet) {
-    padding-top: 17px;
-    padding-bottom: 17px;
+    padding-top: 19px;
+    padding-bottom: 18px;
     padding-left: 20px;
   }
+}
+
+.field__input:hover {
+  border: 1px solid $color-border;
+}
+
+.field__input:invalid + svg {
+  color: $color-error;
+}
+
+.field__input:invalid {
+  border: 1px solid $color-error;
+}
+
+.field__input:active + svg {
+  color: $color-accent;
+}
+
+.field__input:active {
+  border: 1px solid $color-lightgrey;
+}
+
+.field__icon-mail {
+  width: 18px;
+  height: 14px;
+  position: absolute;
+  right: 13px;
+  fill: currentColor;
+
+  @media (min-width: $width-desktop) {
+    right: 0;
+    left: 47%;
+  }
+}
+
+.field__icon-phone {
+  position: absolute;
+  right: 10px;
+  width: 21px;
+  height: 21px;
+  fill: currentColor;
 }
 
 .field__input::placeholder {
   text-transform: uppercase;
   font-family: $font-main;
   color: $color-lightgrey;
+
+  @media (min-width: $width-tablet) {
+    font-size: $font-larger-m;
+    line-height: 1;
+  }
 }
 
 .field__textarea {
@@ -44,7 +185,10 @@
   padding-left: 16px;
 
   @media (min-width: $width-tablet) {
+    font-size: $font-larger-m;
+    line-height: 30px;
     padding-top: 17px;
     padding-left: 20px;
+    height: 174px;
   }
 }

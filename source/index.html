@@ -4,7 +4,11 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/oswaldmedium.woff" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
   </head>
   <body>
     <header class="page-header">
@@ -42,13 +46,15 @@
         </div>
         <div class="preview__pictures">
           <picture>
-            <source srcset="img/index-can-desktop@1x.png" media="(min-width: 1440px)">
+            <source srcset="img/index-can-desktop@1x.png" media="(min-width: 1280px)">
             <source srcset="img/index-can-tablet.png" media="(min-width: 768px)">
             <source srcset="img/index-can-mobile@1x.png" media="(min-width: 320px)">
             <img src="img/index-can-desktop@1x.png" alt="Изображение упаковки Кэт Энерджи">
           </picture>
         </div>
-        <a class="button preview__btn" href="#">Подобрать программу</a>
+        <div class="preview__btn-inner">
+          <a class="preview__btn button" href="form.html">Подобрать программу</a>
+        </div>
       </section>
       <section class="preview-programs">
         <ul class="preview-programs__list">
@@ -57,7 +63,8 @@
               <div class="program__ellipse program__ellipse--slim-cat"></div>
               <h2 class="program__title">Похудение</h2>
             </div>
-            <p class="program__about">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <p class="program__about">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора
+              на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a class="program__button" href="#">Каталог SLIM</a>
           </li>
           <li class="preview-programs__item program">
@@ -65,7 +72,8 @@
               <div class="program__ellipse program__ellipse--weight-cat"></div>
               <h2 class="program__title">Набор массы</h2>
             </div>
-            <p class="program__about">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            <p class="program__about">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
+              поможет вашему коту нарастить необходимые мышцы!</p>
             <a class="program__button" href="#">Каталог PRO</a>
           </li>
         </ul>
@@ -99,7 +107,8 @@
         <div class="example__inner">
           <h2 class="example__title">Живой пример</h2>
           <div class="example__wrapper-desktop">
-            <p class="example__about">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+            <p class="example__about">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+              Slim.
               Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
               часов в день. </p>
             <div class="example__preview">
@@ -120,7 +129,7 @@
             <div class="slider__pictures">
               <div class="slider__inner slider__inner--left">
                 <picture>
-                  <source srcset="img/before-desktop@1x.png" media="(min-width: 1440px)">
+                  <source srcset="img/before-desktop@1x.png" media="(min-width: 1280px)">
                   <source srcset="img/before-tablet@1x.png" media="(min-width: 768px)">
                   <source srcset="img/before-mobile@1x.png" media="(min-width: 320px)">
                   <img class="slider__img" src="img/before-desktop@1x.png" alt="Изображение толстого кота">
@@ -128,10 +137,10 @@
               </div>
               <div class="slider__inner slider__inner--right">
                 <picture>
-                  <source srcset="img/after-desktop@1x.png" media="(min-width: 1440px)">
+                  <source srcset="img/after-desktop@1x.png" media="(min-width: 1280px)">
                   <source srcset="img/after-tablet@1x.png" media="(min-width: 768px)">
                   <source srcset="img/after-mobile@1x.png" media="(min-width: 320px)">
-                  <img class="slider__img slider__img--after" src="img/after-desktop@1x.png" alt="Изображение толстого кота">
+                  <img class="slider__img slider__img--after" src="img/after-desktop@1x.png" alt="Изображение худого кота">
                 </picture>
               </div>
             </div>
@@ -151,56 +160,60 @@
       <section class="page-footer__contacts contacts">
         <div class="contacts__wrapper">
           <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
-          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></p>
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8
+            <span class="contacts__city">Санкт-Петербург</span></p>
         </div>
         <div class="contacts__map map">
-          <picture>
+          <div class="map__interactive-map" id="map"></div>
+          <picture class="map__picture">
             <source srcset="img/bg-map-desktop@1x.png" media="(min-width: 1280px)">
             <source srcset="img/bg-map-tablet@1x.png" media="(min-width: 768px)">
             <source srcset="img/bg-map-mobile@1x.png" media="(min-width: 320px)">
-            <img class="image" src="img/bg-map-desktop@1x.png" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+            <img class="image map__img" src="img/bg-map-desktop@1x.png" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" height="400">
           </picture>
         </div>
       </section>
       <div class="page-footer__bottom">
-        <a class="page-footer__logo logo">
+        <a class="page-footer__logo logo" href="#">
           <img class="logo__img logo__img--footer" src="img/logo-footer.svg" alt="Кэт Энерджи" width="128" height="24">
         </a>
         <ul class="page-footer__social-list social-list">
           <li class="social-list__item">
             <a class="social-list__link" href="#">
               <span class="visually-hidden">Мы в Вконтакте</span>
-              <svg class="social-list__img social-list__img--vk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 12">
-                <path d="M17.6 12c-.3 0-.9-.1-1.5-.5-.5-.3-.9-.7-1.3-1.2-.3-.3-.9-.9-1.1-.9-.2.1-.4.7-.3 1.2 0 .1 0 .6-.3.9-.3.3-.8.4-.9.4h-1.4c-.7 0-3.2-.2-5.4-2.3C2.5 7.1.2 2.2.1 2 0 1.6-.1 1.2.2.9s.8-.4 1-.4h3.1c.1 0 .4.1.7.3.3.2.4.5.5.6.7 1.5 1.5 2.8 2.6 4 .1-.4.2-1.4.1-2.3 0-.4-.1-.8-.2-1-.1-.1-.3-.2-.5-.2l-.6-.5c0-.5.5-.9.9-1.1.5-.2 1.3-.3 2.3-.3h.5c.9 0 1.2.1 1.6.1 1.2.3 1.2 1.3 1.1 2.5v1.6c0 .3 0 .8.1 1 .2-.1.6-.5 1.5-1.9.6-.9 1-1.9 1.1-2.1.1-.3.4-.7 1.2-.7h3.4c.7 0 1.2.2 1.3.7.2.5.1 1.3-1.7 3.5-.3.3-.5.6-.7.9-.5.4-.9 1-.9 1.1s.5.5.9.9c1.1.9 1.9 1.7 2.2 2.3.4.6.3 1 .2 1.3-.3.7-1.2.7-1.4.8h-2.8-.1zm-3.9-3.7c.7 0 1.2.6 1.8 1.2.4.4.7.8 1.1 1 .5.3 1 .3 1 .3h2.9c.1 0 .3-.1.4-.1 0 0 0-.1-.1-.1-.3-.5-1-1.3-2-2.1-.9-.7-1.3-1.1-1.4-1.7 0-.6.4-1.1 1.2-2.1.2-.2.4-.5.7-.8 1.1-1.4 1.4-2 1.5-2.3h-3.9c0 .4-.5 1.5-1.1 2.4-1.4 2.1-2 2.4-2.5 2.4-.1 0-.3 0-.4-.1-.7-.4-.7-1.4-.7-2.1V2.6c.1-1.3 0-1.3-.3-1.4-.3-.1-.5-.1-1.4-.1H10c-.5 0-1 0-1.4.1l.2.2c.4.5.4 1.5.4 1.7.1 1.3 0 2.9-.7 3.3-.1 0-.2.1-.4.1-.6 0-1.3-.7-2.5-2.5C5 2.9 4.5 1.8 4.5 1.8s0-.1-.1-.1-.2-.1-.2-.1h-3c.4.9 2.5 5 4.8 7.2 2 1.9 4.3 2 4.7 2h1.4s.2 0 .2-.1v-.1c0-.2 0-2 1.2-2.3h.2z"/>
+              <svg class="social-list__img social-list__img--vk" width="22" height="12">
+                <use xlink:href="img/sprite.svg#icon-vk"></use>
               </svg>
             </a>
           </li>
           <li class="social-list__item">
             <a class="social-list__link" href="#">
               <span class="visually-hidden">Мы в Инстраграме</span>
-              <svg class="social-list__img social-list__img--inst" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 16.1 16" xml:space="preserve">
-                <path class="st0" d="M11.8 1C13.6 1 15 2.4 15 4.2v7.7c0 1.7-1.4 3.1-3.1 3.1H4.2C2.4 15 1 13.6 1 11.8V4.2C1 2.4 2.4 1 4.2 1h7.6m0-1H4.2C1.9 0 0 1.9 0 4.2v7.7C0 14.1 1.9 16 4.2 16h7.7c2.3 0 4.2-1.9 4.2-4.2V4.2C16 1.9 14.1 0 11.8 0z"/>
-                <path class="st0" d="M8 4.9c1.7 0 3.1 1.4 3.1 3.1S9.7 11.1 8 11.1 4.9 9.7 4.9 8 6.3 4.9 8 4.9m0-1C5.7 3.9 3.9 5.7 3.9 8s1.8 4.1 4.1 4.1 4.1-1.8 4.1-4.1S10.3 3.9 8 3.9z"/>
-                <circle class="st0" cx="12.3" cy="3.7" r=".9"/>
+              <svg class="social-list__img social-list__img--inst" width="17" height="17">
+                <use xlink:href="img/sprite.svg#icon-insta"></use>
               </svg>
             </a>
           </li>
           <li class="social-list__item">
             <a class="social-list__link" href="#">
               <span class="visually-hidden">Мы в Фейсбуке</span>
-              <svg class="social-list__img social-list__img--fb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 19">
-                <path d="M7.1 19H2v-8.8H0V5.8h1.9c-.1-2 .2-3.4 1.1-4.4C3.8.5 5 .1 6.5 0H10v4.2H7.2c-.1.2-.2.8-.2 1.6h3v4.4H7.1V19zm-4-1h2.8V9.1h2.9V6.8H5.9v-.5c0-1.4 0-2.6.7-3.1l.1-.1h2.1V1H6.5c-1.2.1-2 .4-2.6 1-.8.8-1 2.3-.8 4.2l.1.6H1.1v2.3h2V18z"/>
+              <svg class="social-list__img social-list__img--fb" width="10" height="19">
+                <use xlink:href="img/sprite.svg#icon-fb"></use>
               </svg>
             </a>
           </li>
         </ul>
         <div class="page-footer__copyright copyright">
-          <a class="copyright__academy">HTML Academy</a>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="copyright__logo-academy" src="img/htmlacademy.svg" alt="Ссылка на академию" width="27px" height="34px">
+            <p class="copyright__academy">HTML Academy</p>
+            <svg class="copyright__logo-academy" width="27" height="34">
+              <use xlink:href="img/sprite.svg#htmlacademy"></use>
+            </svg>
           </a>
         </div>
       </div>
     </footer>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=88194157-97f9-4760-85aa-886d7b04b2b8&lang=ru_RU" type="text/javascript"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

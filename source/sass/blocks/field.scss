@@ -4,14 +4,6 @@
   color: $color-darkgrey;
 }
 
-.field:active {
-  color: $color-accent;
-}
-
-.field:invalid {
-  color: $color-error;
-}
-
 .field__label {
   font-size: $font-s;
   text-transform: uppercase;
@@ -132,12 +124,20 @@
   border: 1px solid $color-border;
 }
 
-.field__input:active {
-  border: 1px solid $color-lightgrey;
+.field__input:invalid + svg {
+  color: $color-error;
 }
 
 .field__input:invalid {
   border: 1px solid $color-error;
+}
+
+.field__input:active + svg {
+  color: $color-accent;
+}
+
+.field__input:active {
+  border: 1px solid $color-lightgrey;
 }
 
 .field__icon-mail {

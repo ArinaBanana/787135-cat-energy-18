@@ -1,4 +1,4 @@
-// ymaps.ready(init);
+ymaps.ready(init);
 
 function getIconSize() {
   var windowWidth = window.innerWidth;
@@ -22,20 +22,20 @@ function init() {
     zoom: 17
   });
 
+var placemark = new ymaps.Placemark([59.9388562, 30.3232834], {}, { // координаты метки
+  iconLayout: "default#image",
+  iconImageHref: "img/map-pin.png", // иконка метки
+  iconImageSize: getIconSize() // размер метки
+});
 
-  var placemark = new ymaps.Placemark([59.9388562, 30.3232834], {}, { // координаты метки
-    iconLayout: "default#image",
-    iconImageHref: "img/map-pin.png", // иконка метки
-    iconImageSize: getIconSize() // размер метки
-  });
+myMap.geoObjects.add(placemark);
 
-  myMap.geoObjects.add(placemark);
+window.addEventListener('resize', function () {
+  var newSize = getIconSize();
+  var oldSize = placemark.options.get('iconImageSize');
+  if (newSize[0] !== oldSize[0] && newSize[1] !== oldSize[1]) {
+    placemark.options.set('iconImageSize', newSize);
+  }
+});
 
-  window.addEventListener('resize', function () {
-    var newSize = getIconSize();
-    var oldSize = placemark.options.get('iconImageSize');
-    if (newSize[0] !== oldSize[0] && newSize[1] !== oldSize[1]) {
-      placemark.options.set('iconImageSize', newSize);
-    }
-  })
 }

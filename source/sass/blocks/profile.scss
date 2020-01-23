@@ -1,20 +1,40 @@
 .profile__fieldset {
   @include none-indentation;
   border: 0;
+  position: relative;
+}
+
+.profile__fieldset-line::before {
+  content: " ";
+  position: absolute;
+  top: 12px;
+  right: 0;
+  width: 30%;
+  height: 3px;
+  background-color: $color-accent;
+
+  @media (min-width: $width-tablet) {
+    width: 100%;
+    top: 20px;
+  }
 }
 
 .profile__fields {
+  @include fixed-indent;
+  @include fixed-container;
   position: relative;
 
   @media (min-width: $width-tablet) {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    margin: 0 40px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin: 0 auto;
   }
 
   &--info {
     @media (min-width: $width-desktop) {
-      flex-direction: row;
+      display: flex;
       flex-wrap: nowrap;
     }
   }
@@ -145,122 +165,62 @@
     margin-bottom: 70px;
   }
 
+  &--contacts {
+    @media (min-width: $width-tablet) {
+      width: 93%;
+      padding-left: 40px;
+      margin-left: -40px;
+      background-color: white;
+    }
+
+    @media (min-width: $width-desktop) {
+      padding-left: 20px;
+      margin-left: -20px;
+      width: 47%;
+    }
+  }
+
+  &--comment {
+    @media (min-width: $width-tablet) {
+      width: 42%;
+      padding-left: 40px;
+      margin-left: -40px;
+      background-color: white;
+    }
+
+    @media (min-width: $width-desktop) {
+      padding-left: 20px;
+      margin-left: -20px;
+      width: 20%;
+    }
+  }
+
   &--add {
     @media (min-width: $width-tablet) {
       margin-bottom: 53px;
+      width: 46%;
+      background-color: white;
+      padding-left: 40px;
+      margin-left: -40px;
+    }
+
+    @media (min-width: $width-desktop) {
+      padding-left: 20px;
+      margin-left: -20px;
+      width: 22%;
     }
   }
 }
 
-.profile__line-contacts::before {
-  content: " ";
-  position: absolute;
-  top: 12px;
-  right: 0;
-  width: 35%;
-  height: 3px;
-  margin: 0 -19px;
-  background-color: $color-accent;
-  z-index: -1;
-
+.profile__title-inner {
   @media (min-width: $width-tablet) {
-    margin: 0 -69px;
-    top: 20px;
-    width: 25%;
-  }
-
-  @media (min-width: $width-desktop) {
-    margin: 0 -30px;
-    width: 55%;
-  }
-}
-
-.profile__line-contacts::after {
-  @media (min-width: $width-tablet) {
-    content: " ";
-    position: absolute;
-    width: 40px;
-    height: 3px;
-    background-color: $color-accent;
-    top: 20px;
-    left: 0;
-    margin: 0 -70px;
-  }
-}
-
-.profile__line-comment::before {
-  content: " ";
-  position: absolute;
-  top: 12px;
-  right: 0;
-  width: 55%;
-  height: 3px;
-  margin: 0 -19px;
-  background-color: $color-accent;
-  z-index: -1;
-
-  @media (min-width: $width-tablet) {
-    margin: 0 -69px;
-    top: 18px;
-    width: 75%;
-  }
-
-  @media (min-width: $width-desktop) {
-    margin: 0 -30px;
-    width: 85%;
-  }
-}
-
-.profile__line-comment::after {
-  @media (min-width: $width-tablet) {
-    content: " ";
-    position: absolute;
-    width: 40px;
-    height: 3px;
-    background-color: $color-accent;
-    top: 20px;
-    left: 0;
-    margin: 0 -70px;
-  }
-}
-
-.profile__line-add::before {
-  content: " ";
-  position: absolute;
-  top: 12px;
-  right: 0;
-  width: 50%;
-  height: 3px;
-  margin: 0 -19px;
-  background-color: $color-accent;
-  z-index: -1;
-
-  @media (min-width: $width-tablet) {
-    margin: 0 -69px;
-    top: 18px;
-    width: 70%;
-  }
-
-  @media (min-width: $width-desktop) {
-    margin: 0 -30px;
-    width: 80%;
-  }
-}
-
-.profile__line-add::after {
-  @media (min-width: $width-tablet) {
-    content: " ";
-    position: absolute;
-    width: 40px;
-    height: 3px;
-    background-color: $color-accent;
-    top: 20px;
-    left: 0;
-    margin: 0 -70px;
+    width: 100%;
   }
 }
 
 .profile__inner {
+  @include fixed-container;
+  @include fixed-indent;
   display: flex;
   flex-direction: column;
 

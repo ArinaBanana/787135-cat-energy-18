@@ -1,14 +1,6 @@
-.programs-page {
+.programs-page__wrapper {
   @include fixed-indent;
   @include fixed-container;
-
-  @media (min-width: $width-tablet) {
-    margin: 0 40px;
-  }
-
-  @media (min-width: $width-desktop) {
-    margin: 0 auto;
-  }
 }
 
 .programs-page__title {
@@ -23,7 +15,6 @@
     font-size: $font-xxxl;
     margin-top: 63px;
     margin-bottom: 48px;
-    margin-left: -40px;
   }
 
   @media (min-width: $width-desktop) {

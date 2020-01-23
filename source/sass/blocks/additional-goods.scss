@@ -1,19 +1,5 @@
 .additional-goods {
-  @include fixed-container;
-  @include fixed-indent;
-  padding-bottom: 35px;
   position: relative;
-
-  @media (min-width: $width-tablet) {
-    padding-bottom: 76px;
-  }
-
-  @media (min-width: $width-desktop) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-bottom: 86px;
-  }
 }
 
 .additional-goods::before {
@@ -29,6 +15,23 @@
     top: 18px;
     width: 100%;
     z-index: -1;
+  }
+}
+
+.additional-goods__wrapper {
+  @include fixed-container;
+  @include fixed-indent;
+  padding-bottom: 35px;
+
+  @media (min-width: $width-tablet) {
+    padding-bottom: 76px;
+  }
+
+  @media (min-width: $width-desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 86px;
   }
 }
 

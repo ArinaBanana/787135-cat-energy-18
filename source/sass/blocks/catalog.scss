@@ -23,4 +23,8 @@
     font-size: $font-xxxl;
     padding: 57px 0 92px;
   }
+
+  @media (min-width: $width-desktop) {
+    padding-top: 75px;
+  }
 }

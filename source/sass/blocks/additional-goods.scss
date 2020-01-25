@@ -28,10 +28,13 @@
   }
 
   @media (min-width: $width-desktop) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     padding-bottom: 86px;
+  }
+}
+
+.additional-goods__inner {
+  @media (min-width: $width-desktop) {
+    display: flex;
   }
 }
 
@@ -69,6 +72,7 @@
 
   @media (min-width: $width-desktop) {
     width: 35%;
-    margin-left: 0;
+    margin-left: -37px;
+    margin-bottom: 79px;
   }
 }

@@ -7,7 +7,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    flex-basis: 25%;
+    flex-basis: 24%;
   }
 }
 
@@ -35,6 +35,8 @@
 
   @media (min-width: $width-desktop) {
     width: 245px;
+    padding-right: 38px;
+    padding-left: 38px;
   }
 
   &--more {
@@ -132,6 +134,10 @@
     margin-left: 9px;
     margin-right: 7px;
   }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 34px;
+  }
 }
 
 .product__prop-items {
@@ -181,7 +187,6 @@
   @media (min-width: $width-tablet) {
     padding-top: 10px;
     padding-bottom: 10px;
-    width: 95%;
     margin: 0 auto;
   }
 }

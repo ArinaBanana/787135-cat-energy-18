@@ -1,21 +1,42 @@
 .profile__fieldset {
   @include none-indentation;
   border: 0;
+  position: relative;
+}
+
+.profile__fieldset-line::before {
+  content: " ";
+  position: absolute;
+  top: 12px;
+  right: 0;
+  width: 30%;
+  height: 3px;
+  background-color: $color-accent;
+
+  @media (min-width: $width-tablet) {
+    width: 100%;
+    top: 20px;
+  }
 }
 
 .profile__fields {
+  @include fixed-indent;
+  @include fixed-container;
   position: relative;
 
   @media (min-width: $width-tablet) {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    margin: 0 40px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin: 0 auto;
   }
 
   &--info {
     @media (min-width: $width-desktop) {
-      flex-direction: row;
+      display: flex;
       flex-wrap: nowrap;
+      margin-bottom: 53px;
     }
   }
 }
@@ -28,8 +49,8 @@
   &--programs {
     border: 1px solid $color-border;
     margin: 0 -20px;
-    padding: 21px 20px 6px;
-    margin-bottom: 31px;
+    padding: 21px 20px 11px;
+    margin-bottom: 29px;
 
     @media (min-width: $width-tablet) {
       margin: 0 0 79px;
@@ -39,15 +60,16 @@
     @media (min-width: $width-desktop) {
       margin-left: 80px;
       width: 50%;
+      height: 100%;
+      margin-bottom: 0;
     }
   }
 
   &--additionally {
     padding-bottom: 22px;
 
-    @media (min-width: $width-tablet) {
-      flex-direction: row;
-      flex-wrap: wrap;
+    @media (min-width: $width-desktop) {
+      padding-bottom: 32px;
     }
   }
 
@@ -60,14 +82,15 @@
 
     @media (min-width: $width-desktop) {
       width: 50%;
+      padding-bottom: 0;
     }
   }
 
   &--contacts {
-    padding-bottom: 18px;
+    padding-bottom: 14px;
 
     @media (min-width: $width-tablet) {
-      padding-bottom: 49px;
+      padding-bottom: 47px;
     }
 
     @media (min-width: $width-desktop) {
@@ -78,7 +101,7 @@
   }
 
   &--comment {
-    padding-bottom: 18px;
+    padding-bottom: 13px;
 
     @media (min-width: $width-tablet) {
       padding-bottom: 49px;
@@ -86,32 +109,49 @@
   }
 }
 
+.profile__list-add {
+  @include list-reset;
+
+  @media (min-width: $width-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .profile__item {
-  margin-top: 0;
-  margin-bottom: 13px;
+  @include none-indentation;
+  margin-bottom: 16px;
 
   @media (min-width: $width-tablet) {
     margin-bottom: 20px;
   }
 
   &--additionally {
+    margin-bottom: 12px;
+
     @media (min-width: $width-tablet) {
       width: 50%;
       margin-bottom: 32px;
     }
 
     @media (min-width: $width-desktop) {
-      width: 25%;
+      width: 20%;
     }
   }
 
   &--contacts {
+    @media (min-width: $width-tablet) {
+      margin-bottom: 22px;
+    }
+
     @media (min-width: $width-desktop) {
       width: 50%;
     }
   }
 
   &--program {
+    margin-bottom: 11px;
+
     @media (min-width: $width-tablet) {
       margin-bottom: 13px;
     }
@@ -120,7 +160,23 @@
 
 .profile__item--contacts:not(:first-child) {
   @media (min-width: $width-desktop) {
-    padding-left: 78px;
+    padding-left: 39px;
+  }
+}
+
+.profile__item--additionally:nth-child(even) {
+  @media (min-width: $width-tablet) {
+    padding-left: 29px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-left: 0;
+  }
+}
+
+.profile__item--additionally:not(:first-child) {
+  @media (min-width: $width-desktop) {
+    margin-left: 81px;
   }
 }
 
@@ -136,131 +192,75 @@
   font-size: $font-l;
   font-weight: normal;
   line-height: 1;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
   width: 100%;
   word-break: break-word;
 
   @media (min-width: $width-tablet) {
     font-size: $font-xxl;
-    margin-bottom: 70px;
+    margin-bottom: 71px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 74px;
+  }
+
+  &--contacts {
+    @media (min-width: $width-tablet) {
+      width: 93%;
+      padding-left: 40px;
+      margin-left: -40px;
+      background-color: white;
+    }
+
+    @media (min-width: $width-desktop) {
+      padding-left: 20px;
+      margin-left: -20px;
+      width: 47%;
+    }
+  }
+
+  &--comment {
+    @media (min-width: $width-tablet) {
+      width: 42%;
+      padding-left: 40px;
+      margin-left: -40px;
+      background-color: white;
+    }
+
+    @media (min-width: $width-desktop) {
+      padding-left: 20px;
+      margin-left: -20px;
+      width: 20%;
+    }
   }
 
   &--add {
     @media (min-width: $width-tablet) {
       margin-bottom: 53px;
+      width: 46%;
+      background-color: white;
+      padding-left: 40px;
+      margin-left: -40px;
+    }
+
+    @media (min-width: $width-desktop) {
+      padding-left: 20px;
+      margin-left: -20px;
+      width: 22%;
     }
   }
 }
 
-.profile__line-contacts::before {
-  content: " ";
-  position: absolute;
-  top: 12px;
-  right: 0;
-  width: 35%;
-  height: 3px;
-  margin: 0 -19px;
-  background-color: $color-accent;
-  z-index: -1;
-
+.profile__title-inner {
   @media (min-width: $width-tablet) {
-    margin: 0 -69px;
-    top: 20px;
-    width: 25%;
-  }
-
-  @media (min-width: $width-desktop) {
-    margin: 0 -30px;
-    width: 55%;
-  }
-}
-
-.profile__line-contacts::after {
-  @media (min-width: $width-tablet) {
-    content: " ";
-    position: absolute;
-    width: 40px;
-    height: 3px;
-    background-color: $color-accent;
-    top: 20px;
-    left: 0;
-    margin: 0 -70px;
-  }
-}
-
-.profile__line-comment::before {
-  content: " ";
-  position: absolute;
-  top: 12px;
-  right: 0;
-  width: 55%;
-  height: 3px;
-  margin: 0 -19px;
-  background-color: $color-accent;
-  z-index: -1;
-
-  @media (min-width: $width-tablet) {
-    margin: 0 -69px;
-    top: 18px;
-    width: 75%;
-  }
-
-  @media (min-width: $width-desktop) {
-    margin: 0 -30px;
-    width: 85%;
-  }
-}
-
-.profile__line-comment::after {
-  @media (min-width: $width-tablet) {
-    content: " ";
-    position: absolute;
-    width: 40px;
-    height: 3px;
-    background-color: $color-accent;
-    top: 20px;
-    left: 0;
-    margin: 0 -70px;
-  }
-}
-
-.profile__line-add::before {
-  content: " ";
-  position: absolute;
-  top: 12px;
-  right: 0;
-  width: 50%;
-  height: 3px;
-  margin: 0 -19px;
-  background-color: $color-accent;
-  z-index: -1;
-
-  @media (min-width: $width-tablet) {
-    margin: 0 -69px;
-    top: 18px;
-    width: 70%;
-  }
-
-  @media (min-width: $width-desktop) {
-    margin: 0 -30px;
-    width: 80%;
-  }
-}
-
-.profile__line-add::after {
-  @media (min-width: $width-tablet) {
-    content: " ";
-    position: absolute;
-    width: 40px;
-    height: 3px;
-    background-color: $color-accent;
-    top: 20px;
-    left: 0;
-    margin: 0 -70px;
+    width: 100%;
   }
 }
 
 .profile__inner {
+  @include fixed-container;
+  @include fixed-indent;
   display: flex;
   flex-direction: column;
 
@@ -296,16 +296,22 @@
 }
 
 .profile__button {
-  padding-top: 13px;
+  padding-top: 10px;
   padding-bottom: 11px;
-  margin-bottom: 23px;
+  margin-bottom: 19px;
   font-size: $font-s;
 
   @media (min-width: $width-tablet) {
-    width: 45%;
+    width: 40%;
     padding-top: 17px;
     padding-bottom: 15px;
     margin-bottom: 0;
+    margin-left: 40px;
     font-size: $font-larger-m;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-left: 0;
+    width: 48%;
   }
 }

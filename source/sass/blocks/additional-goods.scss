@@ -1,19 +1,5 @@
 .additional-goods {
-  @include fixed-container;
-  @include fixed-indent;
-  padding-bottom: 35px;
   position: relative;
-
-  @media (min-width: $width-tablet) {
-    padding-bottom: 76px;
-  }
-
-  @media (min-width: $width-desktop) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-bottom: 86px;
-  }
 }
 
 .additional-goods::before {
@@ -32,12 +18,32 @@
   }
 }
 
-.additional-goods__list {
-  @include list-reset;
-  margin-bottom: 39px;
+.additional-goods__wrapper {
+  @include fixed-container;
+  @include fixed-indent;
+  padding-bottom: 35px;
 
   @media (min-width: $width-tablet) {
-    margin-bottom: 69px;
+    padding-bottom: 76px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-bottom: 86px;
+  }
+}
+
+.additional-goods__inner {
+  @media (min-width: $width-desktop) {
+    display: flex;
+  }
+}
+
+.additional-goods__list {
+  @include list-reset;
+  margin-bottom: 42px;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 70px;
   }
 
   @media (min-width: $width-desktop) {
@@ -56,7 +62,7 @@
 
   @media (min-width: $width-tablet) {
     border-bottom: 0;
-    margin-bottom: 75px;
+    margin-bottom: 78px;
     padding: 0 0 0 37px;
     font-size: $font-xxl;
     background-color: $color-white;
@@ -66,6 +72,7 @@
 
   @media (min-width: $width-desktop) {
     width: 35%;
-    margin-left: 0;
+    margin-left: -37px;
+    margin-bottom: 79px;
   }
 }

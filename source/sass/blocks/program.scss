@@ -1,9 +1,9 @@
 .program {
   background-color: $color-calm;
-  padding: 20px;
+  padding: 24px 20px 22px;
 
   @media (min-width: $width-tablet) {
-    padding: 80px 62px 62px 50px;
+    padding: 80px 52px 62px;
   }
 
   @media (min-width: $width-desktop) {
@@ -39,26 +39,27 @@
   }
 
   @media (min-width: $width-desktop) {
-    margin-left: 64px;
+    margin-left: 62px;
+    margin-bottom: 10px;
   }
 }
 
 .program__about {
   @include none-indentation;
   color: $color-lightgrey;
-  font-family: $font-extra;
-  margin-bottom: 24px;
+  margin-bottom: 36px;
+  word-break: break-word;
 
   @media (min-width: $width-tablet) {
     margin-bottom: 53px;
-    width: 65%;
+    width: 45%;
     font-size: $font-s;
     line-height: 24px;
   }
 
   @media (min-width: $width-desktop) {
-    width: 100%;
-    margin-bottom: 37px;
+    width: 89%;
+    margin-bottom: 33px;
   }
 }
 
@@ -92,8 +93,12 @@
   height: 12px;
   background-image: url("../img/right-arrow-long-svg.svg");
   background-repeat: no-repeat;
-  margin-left: 13px;
+  margin-left: 12px;
   cursor: pointer;
+
+  @media (min-width: $width-tablet) {
+    margin-left: 23px;
+  }
 }
 
 .program__button:hover::after {
@@ -113,62 +118,13 @@
   border: 1px solid $color-accent;
   border-radius: 50%;
 
-  &--slim-cat::before {
-    content: " ";
-    display: flex;
-    margin: 0 auto;
-    position: relative;
-    bottom: 3px;
-    width: 35px;
-    height: 49px;
-    background-image: url("../img/icon-cat-slim.svg");
-    background-repeat: no-repeat;
-
-    @media (min-width: $width-tablet) {
-      width: 141px;
-      height: 194px;
-      bottom: 13px;
-    }
-
-    @media (min-width: $width-desktop) {
-      width: 71px;
-      height: 97px;
-      bottom: 9px;
-    }
-  }
-
-  &--weight-cat::before {
-    content: " ";
-    display: flex;
-    position: relative;
-    top: 11px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 67px;
-    height: 28px;
-    background-image: url("../img/icon-cat-pro.svg");
-    background-repeat: no-repeat;
-
-    @media (min-width: $width-tablet) {
-      width: 268px;
-      height: 113px;
-      top: 44px;
-    }
-
-    @media (min-width: $width-desktop) {
-      width: 134px;
-      height: 57px;
-      top: 22px;
-    }
-  }
-
   @media (min-width: $width-tablet) {
     width: 200px;
     height: 200px;
     order: 2;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 10px;
+    right: 10px;
   }
 
   @media (min-width: $width-desktop) {
@@ -176,5 +132,54 @@
     height: 100px;
     order: -1;
     position: static;
+  }
+}
+
+.program__slim-cat {
+  content: " ";
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  bottom: 3px;
+  width: 35px;
+  height: 49px;
+  background-image: url("../img/icon-cat-slim.svg");
+  background-repeat: no-repeat;
+
+  @media (min-width: $width-tablet) {
+    width: 141px;
+    height: 194px;
+    bottom: 13px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 71px;
+    height: 97px;
+    bottom: 9px;
+  }
+}
+
+.program__weight-cat {
+  content: " ";
+  display: flex;
+  position: relative;
+  top: 11px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 67px;
+  height: 28px;
+  background-image: url("../img/icon-cat-pro.svg");
+  background-repeat: no-repeat;
+
+  @media (min-width: $width-tablet) {
+    width: 268px;
+    height: 113px;
+    top: 44px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 134px;
+    height: 57px;
+    top: 18px;
   }
 }

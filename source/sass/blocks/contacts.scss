@@ -11,11 +11,11 @@
   @include fixed-container;
   display: flex;
   justify-content: space-between;
-  padding-top: 31px;
-  padding-bottom: 26px;
+  padding-top: 26px;
+  padding-bottom: 28px;
 
   @media (min-width: $width-tablet) {
-    padding-top: 69px;
+    padding-top: 65px;
     padding-bottom: 59px;
   }
 
@@ -26,6 +26,8 @@
     left: 110px;
     top: 95px;
     z-index: 1;
+    padding-right: 36px;
+    padding-left: 36px;
   }
 
   &--bg {
@@ -60,13 +62,12 @@
 
 .contacts__address {
   @include none-indentation;
-  font-family: $font-extra;
   line-height: 20px;
   color: $color-lightgrey;
 
   @media (min-width: $width-tablet) {
     font-size: $font-s;
-    width: 50%;
+    width: 20%;
     word-break: break-word;
     text-align: right;
     margin-right: 40px;
@@ -81,10 +82,10 @@
 .contacts__city {
   @media (min-width: $width-tablet) {
     display: block;
-    padding-top: 26px;
+    padding-top: 17px;
   }
 
   @media (min-width: $width-desktop) {
-    padding-top: 23px;
+    padding-top: 14px;
   }
 }

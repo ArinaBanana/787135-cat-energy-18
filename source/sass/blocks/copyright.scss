@@ -24,12 +24,12 @@
 }
 
 .copyright__academy {
+  @include none-indentation;
   color: $color-lightgrey;
-  font-family: $font-extra;
   font-size: $font-s;
   line-height: 1;
 
   @media (min-width: $width-tablet) {
-    margin-right: 23px;
+    margin-right: 30px;
   }
 }

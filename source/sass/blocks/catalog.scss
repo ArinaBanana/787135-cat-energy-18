@@ -16,11 +16,15 @@
   font-size: $font-xxl;
   font-weight: normal;
   line-height: 60px;
-  padding-top: 20px;
-  padding-bottom: 24px;
+  padding-top: 17px;
+  padding-bottom: 27px;
 
   @media (min-width: $width-tablet) {
     font-size: $font-xxxl;
-    padding: 65px 0 75px;
+    padding: 57px 0 92px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-top: 75px;
   }
 }

@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.min.css">
     <link rel="preload" href="fonts/oswaldmedium.woff" as="font">
     <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
     <link rel="preload" href="fonts/oswaldregular.woff" as="font">
     <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <header class="page-header">
@@ -49,7 +49,7 @@
             <source srcset="img/index-can-desktop@1x.png" media="(min-width: 1280px)">
             <source srcset="img/index-can-tablet.png" media="(min-width: 768px)">
             <source srcset="img/index-can-mobile@1x.png" media="(min-width: 320px)">
-            <img src="img/index-can-desktop@1x.png" alt="Изображение упаковки Кэт Энерджи">
+            <img class="preview__img image" src="img/index-can-desktop@1x.png" srcset="img/index-can-desktop@2x.png, img/index-can-tablet@2x.jpg, img/index-can-mobile@2x.png" alt="Изображение упаковки Кэт Энерджи">
           </picture>
         </div>
         <div class="preview__btn-inner">
@@ -60,7 +60,11 @@
         <ul class="preview-programs__list">
           <li class="preview-programs__item program">
             <div class="program__wrapper-title">
-              <div class="program__ellipse program__ellipse--slim-cat"></div>
+              <div class="program__ellipse">
+                <svg class="program__slim-cat" width="35" height="49">
+                  <use xlink:href="img/sprite.svg#icon-cat-slim"></use>
+                </svg>
+              </div>
               <h2 class="program__title">Похудение</h2>
             </div>
             <p class="program__about">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора
@@ -69,7 +73,11 @@
           </li>
           <li class="preview-programs__item program">
             <div class="program__wrapper-title">
-              <div class="program__ellipse program__ellipse--weight-cat"></div>
+              <div class="program__ellipse">
+                <svg class="program__weight-cat" width="67" height="28">
+                  <use xlink:href="img/sprite.svg#icon-cat-pro"></use>
+                </svg>
+              </div>
               <h2 class="program__title">Набор массы</h2>
             </div>
             <p class="program__about">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
@@ -81,23 +89,19 @@
       <section class="advantage">
         <h2 class="advantage__title">Как это работает</h2>
         <ul class="advantage__list">
-          <li class="advantage__item">
-            <div class="advantage__icon advantage__icon--health"></div>
+          <li class="advantage__item advantage__item--icon-health">
             <p class="advantage__text">Функциональное питание содержит только полезные питательные вещества.</p>
             <div class="advantage__icon-number advantage__icon-number--one"></div>
           </li>
-          <li class="advantage__item advantage__item--icon-two">
-            <div class="advantage__icon advantage__icon--water"></div>
+          <li class="advantage__item advantage__item--icon-water">
             <p class="advantage__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
             <div class="advantage__icon-number advantage__icon-number--two"></div>
           </li>
-          <li class="advantage__item advantage__item--icon-three">
-            <div class="advantage__icon advantage__icon--food"></div>
+          <li class="advantage__item advantage__item--icon-food">
             <p class="advantage__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
             <div class="advantage__icon-number advantage__icon-number--three"></div>
           </li>
-          <li class="advantage__item advantage__item--icon-four">
-            <div class="advantage__icon advantage__icon--time"></div>
+          <li class="advantage__item advantage__item--icon-time">
             <p class="advantage__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
             <div class="advantage__icon-number advantage__icon-number--four"></div>
           </li>
@@ -106,7 +110,7 @@
       <section class="example">
         <div class="example__inner">
           <h2 class="example__title">Живой пример</h2>
-          <div class="example__wrapper-desktop">
+          <div class="example__wrapper">
             <p class="example__about">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
               Slim.
               Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
@@ -132,7 +136,7 @@
                   <source srcset="img/before-desktop@1x.png" media="(min-width: 1280px)">
                   <source srcset="img/before-tablet@1x.png" media="(min-width: 768px)">
                   <source srcset="img/before-mobile@1x.png" media="(min-width: 320px)">
-                  <img class="slider__img" src="img/before-desktop@1x.png" alt="Изображение толстого кота">
+                  <img class="slider__img" src="img/before-desktop@1x.png" srcset="img/before-desktop@2x.png, img/before-tablet@2x.png, img/before-mobile@2x.png" alt="Изображение толстого кота">
                 </picture>
               </div>
               <div class="slider__inner slider__inner--right">
@@ -140,7 +144,7 @@
                   <source srcset="img/after-desktop@1x.png" media="(min-width: 1280px)">
                   <source srcset="img/after-tablet@1x.png" media="(min-width: 768px)">
                   <source srcset="img/after-mobile@1x.png" media="(min-width: 320px)">
-                  <img class="slider__img slider__img--after" src="img/after-desktop@1x.png" alt="Изображение худого кота">
+                  <img class="slider__img slider__img--after" src="img/after-desktop@1x.png" srcset="img/after-desktop@2x.png, img/after-tablet@2x.png, img/after-mobile@2x.png" alt="Изображение худого кота">
                 </picture>
               </div>
             </div>
@@ -169,7 +173,7 @@
             <source srcset="img/bg-map-desktop@1x.png" media="(min-width: 1280px)">
             <source srcset="img/bg-map-tablet@1x.png" media="(min-width: 768px)">
             <source srcset="img/bg-map-mobile@1x.png" media="(min-width: 320px)">
-            <img class="image map__img" src="img/bg-map-desktop@1x.png" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" height="400">
+            <img class="image map__img" src="img/bg-map-desktop@1x.png" srcset="img/bg-map-desktop@2x.png, img/bg-map-tablet@2x.png, img/bg-map-mobile@2x.png" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" height="400">
           </picture>
         </div>
       </section>
@@ -178,7 +182,7 @@
           <img class="logo__img logo__img--footer" src="img/logo-footer.svg" alt="Кэт Энерджи" width="128" height="24">
         </a>
         <ul class="page-footer__social-list social-list">
-          <li class="social-list__item">
+          <li class="social-list__item social-list__item--vk">
             <a class="social-list__link" href="#">
               <span class="visually-hidden">Мы в Вконтакте</span>
               <svg class="social-list__img social-list__img--vk" width="22" height="12">
@@ -186,7 +190,7 @@
               </svg>
             </a>
           </li>
-          <li class="social-list__item">
+          <li class="social-list__item social-list__item--insta">
             <a class="social-list__link" href="#">
               <span class="visually-hidden">Мы в Инстраграме</span>
               <svg class="social-list__img social-list__img--inst" width="17" height="17">
@@ -194,7 +198,7 @@
               </svg>
             </a>
           </li>
-          <li class="social-list__item">
+          <li class="social-list__item social-list__item--fb">
             <a class="social-list__link" href="#">
               <span class="visually-hidden">Мы в Фейсбуке</span>
               <svg class="social-list__img social-list__img--fb" width="10" height="19">

@@ -6,12 +6,14 @@
 
   @media (min-width: $width-tablet) {
     width: 636px;
-    height: 517px;
+    height: 512px;
     z-index: 2;
+    margin-bottom: 16px;
   }
 
   @media (min-width: $width-desktop) {
-    margin: 0 0 0 auto;
+    margin-right: 40px;
+    margin-bottom: 35px;
   }
 }
 
@@ -60,8 +62,9 @@
   justify-content: center;
 
   @media (min-width: $width-desktop) {
-    justify-content: flex-end;
-    margin-right: 40px;
+    margin-right: 30px;
+    margin-left: auto;
+    width: 570px;
   }
 }
 

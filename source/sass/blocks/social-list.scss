@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px 0;
+  padding: 21px 0;
   margin-bottom: 20px;
   border-top: 1px solid $color-border;
   border-bottom: 1px solid $color-border;
@@ -15,13 +15,20 @@
   }
 }
 
-.social-list__item:not(:first-child) {
-  margin-left: 40px;
+.social-list__item {
+  &--vk {
+    margin-right: 36px;
+  }
+
+  &--insta {
+    margin-right: 40px;
+  }
 }
 
 .social-list__link {
   text-decoration: none;
   cursor: pointer;
+  display: flex;
 }
 
 .social-list__img {

@@ -50,7 +50,7 @@
 
 .product__inner {
   width: 50%;
-  padding-top: 25px;
+  padding-top: 20px;
 
   @media (min-width: $width-tablet) {
     padding-top: 165px;
@@ -59,6 +59,7 @@
 
   &--more {
     width: 100%;
+    padding-top: 23px;
 
     @media (min-width: $width-tablet) {
       padding-top: 0;
@@ -97,7 +98,7 @@
   text-transform: uppercase;
   width: 74px;
   word-wrap: break-word;
-  margin-bottom: 18px;
+  margin-bottom: 13px;
 
   @media (min-width: $width-tablet) {
     width: 60%;
@@ -173,7 +174,7 @@
   @include fixed-indent;
   font-size: $font-s;
   width: 100%;
-  padding-top: 10px;
+  padding-top: 9px;
   padding-bottom: 10px;
   text-decoration: none;
 

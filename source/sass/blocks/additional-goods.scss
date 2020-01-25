@@ -37,7 +37,7 @@
 
 .additional-goods__list {
   @include list-reset;
-  margin-bottom: 39px;
+  margin-bottom: 42px;
 
   @media (min-width: $width-tablet) {
     margin-bottom: 69px;

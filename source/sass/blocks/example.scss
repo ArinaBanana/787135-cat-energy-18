@@ -21,7 +21,7 @@
     position: absolute;
     background-color: $color-white;
     z-index: 1;
-    top: 40%;
+    top: 38%;
   }
 
   @media (min-width: $width-desktop) {
@@ -37,7 +37,7 @@
   padding-top: 17px;
 
   @media (min-width: $width-tablet) {
-    padding-top: 51px;
+    padding-top: 44px;
   }
 
   @media (min-width: $width-desktop) {
@@ -75,7 +75,8 @@
   @media (min-width: $width-tablet) {
     font-size: $font-s;
     line-height: 24px;
-    margin-bottom: 56px;
+    margin-bottom: 53px;
+    width: 90%;
   }
 
   @media (min-width: $width-desktop) {
@@ -105,12 +106,13 @@
   margin-bottom: 36px;
 
   @media (min-width: $width-tablet) {
-    width: 60%;
+    width: 52%;
     margin: 0;
   }
 
   @media (min-width: $width-desktop) {
     margin-bottom: 54px;
+    width: 60%;
   }
 }
 
@@ -160,7 +162,8 @@
     font-size: $font-xs;
     background-color: $color-white;
     top: 70px;
-    //padding-left: 8px;
+    display: flex;
+    justify-content: center;
 
     &--weight {
       width: 114px;
@@ -173,8 +176,6 @@
 
   @media (min-width: $width-desktop) {
     background-color: $color-calm;
-    display: flex;
-    justify-content: center;
   }
 }
 
@@ -209,7 +210,7 @@
 .example__slider {
   @media (min-width: $width-tablet) {
     margin: 0 -30px;
-    padding-bottom: 68px;
+    padding-bottom: 71px;
     background-color: $color-calm;
   }
 

@@ -52,7 +52,7 @@
 
   @media (min-width: $width-tablet) {
     margin-bottom: 53px;
-    width: 65%;
+    width: 45%;
     font-size: $font-s;
     line-height: 24px;
   }
@@ -96,7 +96,7 @@
   margin-left: 12px;
   cursor: pointer;
 
-  @media (min-width: $width-desktop) {
+  @media (min-width: $width-tablet) {
     margin-left: 23px;
   }
 }
@@ -123,8 +123,8 @@
     height: 200px;
     order: 2;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 10px;
+    right: 10px;
   }
 
   @media (min-width: $width-desktop) {

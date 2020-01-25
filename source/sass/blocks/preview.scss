@@ -79,17 +79,16 @@
     font-size: $font-xxxl;
     color: $color-black;
     text-align: start;
-    margin-bottom: 33px;
+    margin-bottom: 40px;
     width: 80%;
-    padding: 61px 0 0 90px;
+    padding: 57px 0 0 87px;
   }
 
   @media (min-width: $width-desktop) {
     padding-left: 80px;
     padding-top: 76px;
     width: 500px;
-    //pixelperfect
-    margin-bottom: 40px;
+    //margin-bottom: 40px;
   }
 }
 
@@ -139,14 +138,16 @@
 
   @media (min-width: $width-tablet) {
     position: absolute;
-    left: 113px;
-    top: 276px;
+    left: 119px;
+    top: 286px;
     padding: 0;
   }
 
   @media (min-width: $width-desktop) {
     position: static;
     padding-left: 113px;
+    left: 113px;
+    top: 276px;
   }
 }
 

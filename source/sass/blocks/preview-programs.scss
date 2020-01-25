@@ -1,6 +1,10 @@
 .preview-programs {
   @include fixed-indent;
 
+  @media (min-width: $width-tablet) {
+    margin-bottom: 46px;
+  }
+
   @media (min-width: $width-desktop) {
     @include fixed-container;
     margin-bottom: 73px;

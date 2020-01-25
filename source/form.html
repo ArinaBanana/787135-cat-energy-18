@@ -94,14 +94,14 @@
                 <div class="profile__wrapper-contacts">
                   <p class="profile__item profile__item--contacts field">
                     <label class="field__label" for="mail">E-mail:*</label>
-                    <input class="field__input field__input--icon" type="email" id="mail" name="mail" placeholder="kuklachev@gmail.com" required>
+                    <input class="field__input field__input--size" type="email" id="mail" name="mail" placeholder="kuklachev@gmail.com" required>
                     <svg class="field__icon-mail" width="18" height="14">
                       <use xlink:href="img/sprite.svg#mail-svg"></use>
                     </svg>
                   </p>
                   <p class="profile__item profile__item--contacts field">
                     <label class="field__label" for="phone">Телефон:*</label>
-                    <input class="field__input field__input--icon" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
+                    <input class="field__input" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
                     <svg class="field__icon-phone" width="21" height="21">
                       <use xlink:href="img/sprite.svg#phone-svg"></use>
                     </svg>
@@ -129,38 +129,37 @@
                 <div class="profile__title-inner">
                   <p class="profile__title profile__title--add">Дополнительно</p>
                 </div>
-                <div class="profile__item profile__item--additionally field">
-                  <label class="field__label field__label--check" for="sweetener-check">
-                    <input class="visually-hidden" type="checkbox" id="sweetener-check" name="check" value="sweetener" checked>
-                    <span class="field__checkbox"></span>
-                    Сахарозаменитель
-                  </label>
-                </div>
-                <div class="profile__item profile__item--additionally field">
-                  <div class="profile__inner-add">
+
+                <ul class="profile__list-add">
+                  <li class="profile__item profile__item--additionally field">
+                    <label class="field__label field__label--check" for="sweetener-check">
+                      <input class="visually-hidden" type="checkbox" id="sweetener-check" name="check" value="sweetener" checked>
+                      <span class="field__checkbox"></span>
+                      Сахарозаменитель
+                    </label>
+                  </li>
+                  <li class="profile__item profile__item--additionally field">
                     <label class="field__label field__label--check" for="water-check">
                       <input class="visually-hidden" type="checkbox" id="water-check" name="check" value="water">
                       <span class="field__checkbox"></span>
                       Питьевая вода
                     </label>
-                  </div>
-                </div>
-                <div class="profile__item profile__item--additionally field">
-                  <label class="field__label field__label--check" for="milk-check">
-                    <input class="visually-hidden" type="checkbox" id="milk-check" name="check" value="milk">
-                    <span class="field__checkbox"></span>
-                    Молоко
-                  </label>
-                </div>
-                <div class="profile__item profile__item--additionally field">
-                  <div class="profile__inner-add">
+                  </li>
+                  <li class="profile__item profile__item--additionally field">
+                    <label class="field__label field__label--check" for="milk-check">
+                      <input class="visually-hidden" type="checkbox" id="milk-check" name="check" value="milk">
+                      <span class="field__checkbox"></span>
+                      Молоко
+                    </label>
+                  </li>
+                  <li class="profile__item profile__item--additionally field">
                     <label class="field__label field__label--check" for="vitamins-check">
                       <input class="visually-hidden" type="checkbox" id="vitamins-check" name="check" value="vitamins">
                       <span class="field__checkbox"></span>
                       Витамины
                     </label>
-                  </div>
-                </div>
+                  </li>
+                </ul>
               </div>
             </div>
           </fieldset>
@@ -228,7 +227,7 @@
         </div>
       </div>
     </footer>
-<!--    <script src="https://api-maps.yandex.ru/2.1/?apikey=88194157-97f9-4760-85aa-886d7b04b2b8&lang=ru_RU" type="text/javascript"></script>-->
-<!--    <script src="js/script.min.js"></script>-->
+    <!--    <script src="https://api-maps.yandex.ru/2.1/?apikey=88194157-97f9-4760-85aa-886d7b04b2b8&lang=ru_RU" type="text/javascript"></script>-->
+    <!--    <script src="js/script.min.js"></script>-->
   </body>
 </html>

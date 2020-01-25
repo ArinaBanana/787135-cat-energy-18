@@ -125,6 +125,12 @@
     padding-bottom: 18px;
     padding-left: 20px;
   }
+
+  &--size {
+    @media (min-width: $width-desktop) {
+      margin-right: 40px;
+    }
+  }
 }
 
 .field__input:hover {
@@ -156,7 +162,7 @@
 
   @media (min-width: $width-desktop) {
     right: 0;
-    left: 47%;
+    left: 44%;
   }
 }
 
@@ -196,8 +202,8 @@
   @media (min-width: $width-tablet) {
     font-size: $font-larger-m;
     line-height: 30px;
-    padding-top: 17px;
-    padding-left: 20px;
+    padding-top: 11px;
+    padding-left: 18px;
     height: 174px;
   }
 }

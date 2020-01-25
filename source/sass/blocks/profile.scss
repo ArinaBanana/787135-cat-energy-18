@@ -36,6 +36,7 @@
     @media (min-width: $width-desktop) {
       display: flex;
       flex-wrap: nowrap;
+      margin-bottom: 53px;
     }
   }
 }
@@ -59,15 +60,16 @@
     @media (min-width: $width-desktop) {
       margin-left: 80px;
       width: 50%;
+      height: 100%;
+      margin-bottom: 0;
     }
   }
 
   &--additionally {
     padding-bottom: 22px;
 
-    @media (min-width: $width-tablet) {
-      flex-direction: row;
-      flex-wrap: wrap;
+    @media (min-width: $width-desktop) {
+      padding-bottom: 32px;
     }
   }
 
@@ -80,6 +82,7 @@
 
     @media (min-width: $width-desktop) {
       width: 50%;
+      padding-bottom: 0;
     }
   }
 
@@ -106,6 +109,15 @@
   }
 }
 
+.profile__list-add {
+  @include list-reset;
+
+  @media (min-width: $width-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .profile__item {
   @include none-indentation;
   margin-bottom: 16px;
@@ -123,7 +135,7 @@
     }
 
     @media (min-width: $width-desktop) {
-      width: 25%;
+      width: 20%;
     }
   }
 
@@ -148,7 +160,23 @@
 
 .profile__item--contacts:not(:first-child) {
   @media (min-width: $width-desktop) {
-    padding-left: 78px;
+    padding-left: 39px;
+  }
+}
+
+.profile__item--additionally:nth-child(even) {
+  @media (min-width: $width-tablet) {
+    padding-left: 29px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-left: 0;
+  }
+}
+
+.profile__item--additionally:not(:first-child) {
+  @media (min-width: $width-desktop) {
+    margin-left: 81px;
   }
 }
 
@@ -171,6 +199,10 @@
   @media (min-width: $width-tablet) {
     font-size: $font-xxl;
     margin-bottom: 71px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 74px;
   }
 
   &--contacts {
@@ -223,13 +255,6 @@
 .profile__title-inner {
   @media (min-width: $width-tablet) {
     width: 100%;
-  }
-}
-
-.profile__inner-add {
-  @media (min-width: $width-tablet) {
-    display: flex;
-    margin-left: 29px;
   }
 }
 
@@ -287,5 +312,6 @@
 
   @media (min-width: $width-desktop) {
     margin-left: 0;
+    width: 48%;
   }
 }

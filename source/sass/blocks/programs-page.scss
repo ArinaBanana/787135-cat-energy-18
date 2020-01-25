@@ -13,8 +13,8 @@
 
   @media (min-width: $width-tablet) {
     font-size: $font-xxxl;
-    margin-top: 63px;
-    margin-bottom: 48px;
+    margin-top: 58px;
+    margin-bottom: 54px;
   }
 
   @media (min-width: $width-desktop) {
@@ -32,6 +32,7 @@
     line-height: 30px;
     width: 60%;
     margin-bottom: 64px;
+    margin-left: 40px;
   }
 
   @media (min-width: $width-desktop) {

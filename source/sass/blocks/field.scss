@@ -14,6 +14,7 @@
   @media (min-width: $width-tablet) {
     font-size: $font-larger-m;
     line-height: 1;
+    margin-right: 16px;
   }
 
   &--check {
@@ -172,10 +173,10 @@
   text-transform: uppercase;
   color: $color-lightgrey;
   font-size: $font-s;
+  line-height: 1;
 
   @media (min-width: $width-tablet) {
     font-size: $font-larger-m;
-    line-height: 1;
   }
 }
 

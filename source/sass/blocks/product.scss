@@ -153,6 +153,9 @@
 
     @media (min-width: $width-tablet) {
       margin-bottom: 85px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 85%;
       border: 0;
       text-align: center;
     }
@@ -168,11 +171,11 @@
 
 .product__btn {
   @include fixed-indent;
-  @include fixed-container;
   font-size: $font-s;
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
+  text-decoration: none;
 
   @media (min-width: $width-tablet) {
     padding-top: 10px;

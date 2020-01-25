@@ -11,8 +11,8 @@
   @include fixed-container;
   display: flex;
   justify-content: space-between;
-  padding-top: 31px;
-  padding-bottom: 26px;
+  padding-top: 26px;
+  padding-bottom: 28px;
 
   @media (min-width: $width-tablet) {
     padding-top: 69px;
@@ -84,6 +84,6 @@
   }
 
   @media (min-width: $width-desktop) {
-    padding-top: 23px;
+    padding-top: 30px;
   }
 }

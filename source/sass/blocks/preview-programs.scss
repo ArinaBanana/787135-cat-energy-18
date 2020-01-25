@@ -3,7 +3,7 @@
 
   @media (min-width: $width-desktop) {
     @include fixed-container;
-    margin-bottom: 79px;
+    margin-bottom: 73px;
   }
 }
 
@@ -16,7 +16,7 @@
 }
 
 .preview-programs__item {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 
   @media (min-width: $width-tablet) {
     margin-bottom: 30px;

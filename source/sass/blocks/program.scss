@@ -1,9 +1,9 @@
 .program {
   background-color: $color-calm;
-  padding: 20px;
+  padding: 24px 20px 22px;
 
   @media (min-width: $width-tablet) {
-    padding: 80px 62px 62px 50px;
+    padding: 80px 52px 62px;
   }
 
   @media (min-width: $width-desktop) {
@@ -39,14 +39,16 @@
   }
 
   @media (min-width: $width-desktop) {
-    margin-left: 64px;
+    margin-left: 62px;
+    margin-bottom: 10px;
   }
 }
 
 .program__about {
   @include none-indentation;
   color: $color-lightgrey;
-  margin-bottom: 24px;
+  margin-bottom: 36px;
+  word-break: break-word;
 
   @media (min-width: $width-tablet) {
     margin-bottom: 53px;
@@ -56,8 +58,8 @@
   }
 
   @media (min-width: $width-desktop) {
-    width: 100%;
-    margin-bottom: 37px;
+    width: 89%;
+    margin-bottom: 33px;
   }
 }
 
@@ -91,8 +93,12 @@
   height: 12px;
   background-image: url("../img/right-arrow-long-svg.svg");
   background-repeat: no-repeat;
-  margin-left: 13px;
+  margin-left: 12px;
   cursor: pointer;
+
+  @media (min-width: $width-desktop) {
+    margin-left: 23px;
+  }
 }
 
 .program__button:hover::after {
@@ -174,6 +180,6 @@
   @media (min-width: $width-desktop) {
     width: 134px;
     height: 57px;
-    top: 22px;
+    top: 18px;
   }
 }

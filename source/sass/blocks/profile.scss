@@ -48,8 +48,8 @@
   &--programs {
     border: 1px solid $color-border;
     margin: 0 -20px;
-    padding: 21px 20px 6px;
-    margin-bottom: 31px;
+    padding: 21px 20px 11px;
+    margin-bottom: 29px;
 
     @media (min-width: $width-tablet) {
       margin: 0 0 79px;
@@ -84,7 +84,7 @@
   }
 
   &--contacts {
-    padding-bottom: 18px;
+    padding-bottom: 14px;
 
     @media (min-width: $width-tablet) {
       padding-bottom: 49px;
@@ -98,7 +98,7 @@
   }
 
   &--comment {
-    padding-bottom: 18px;
+    padding-bottom: 13px;
 
     @media (min-width: $width-tablet) {
       padding-bottom: 49px;
@@ -107,14 +107,16 @@
 }
 
 .profile__item {
-  margin-top: 0;
-  margin-bottom: 13px;
+  @include none-indentation;
+  margin-bottom: 16px;
 
   @media (min-width: $width-tablet) {
-    margin-bottom: 20px;
+    //margin-bottom: 20px;
   }
 
   &--additionally {
+    margin-bottom: 12px;
+
     @media (min-width: $width-tablet) {
       width: 50%;
       margin-bottom: 32px;
@@ -132,6 +134,8 @@
   }
 
   &--program {
+    margin-bottom: 11px;
+
     @media (min-width: $width-tablet) {
       margin-bottom: 13px;
     }
@@ -156,7 +160,7 @@
   font-size: $font-l;
   font-weight: normal;
   line-height: 1;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
   width: 100%;
   word-break: break-word;
 
@@ -256,9 +260,9 @@
 }
 
 .profile__button {
-  padding-top: 13px;
+  padding-top: 10px;
   padding-bottom: 11px;
-  margin-bottom: 23px;
+  margin-bottom: 19px;
   font-size: $font-s;
 
   @media (min-width: $width-tablet) {

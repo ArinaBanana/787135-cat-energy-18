@@ -168,8 +168,8 @@
 }
 
 .field__input::placeholder {
+  @include font-placeholder;
   text-transform: uppercase;
-  font-family: $font-main, "Arial", sans-serif;
   color: $color-lightgrey;
 
   @media (min-width: $width-tablet) {
@@ -201,7 +201,7 @@
 }
 
 .field__textarea:hover {
-  border: 1px solid $color-border;
+  border-color: $color-border;
 }
 
 .field__textarea:active {

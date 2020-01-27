@@ -54,6 +54,7 @@
 
 .additional-goods__title {
   @include none-indentation;
+  @include font-non-standard;
   font-size: $font-l;
   font-weight: normal;
   line-height: 1;

@@ -1,4 +1,5 @@
 .preview {
+  @include font-non-standard;
   position: relative;
 
   @media (min-width: $width-tablet) {

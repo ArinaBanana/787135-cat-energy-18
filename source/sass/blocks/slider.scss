@@ -69,6 +69,7 @@
 }
 
 .slider__label {
+  @include font-non-standard;
   font-size: $font-s;
   line-height: 20px;
   text-transform: uppercase;

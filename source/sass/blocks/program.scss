@@ -27,6 +27,7 @@
 
 .program__title {
   @include none-indentation;
+  @include font-non-standard;
   font-size: $font-l;
   line-height: 37px;
   text-transform: uppercase;
@@ -64,6 +65,7 @@
 }
 
 .program__button {
+  @include font-non-standard;
   text-transform: uppercase;
   text-decoration: none;
   color: $color-black;

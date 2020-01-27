@@ -1,6 +1,7 @@
 .programs-page__wrapper {
   @include fixed-indent;
   @include fixed-container;
+  @include font-non-standard;
 }
 
 .programs-page__title {

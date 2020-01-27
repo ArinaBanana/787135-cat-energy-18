@@ -175,7 +175,7 @@
 }
 
 .field__input::placeholder {
-  @include font-placeholder;
+  @include font-non-standard;
   text-transform: uppercase;
   color: $color-lightgrey;
   font-size: $font-s;

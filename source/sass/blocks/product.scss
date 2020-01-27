@@ -95,6 +95,7 @@
 
 .product__title {
   @include none-indentation;
+  @include font-non-standard;
   font-size: $font-s;
   line-height: 20px;
   text-transform: uppercase;
@@ -178,6 +179,7 @@
 
 .product__btn {
   @include fixed-indent;
+  @include font-non-standard;
   font-size: $font-s;
   width: 100%;
   padding-top: 9px;

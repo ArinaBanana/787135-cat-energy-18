@@ -41,6 +41,7 @@
 
 .contacts__title {
   @include none-indentation;
+  @include font-non-standard;
   font-size: $font-s;
   line-height: 20px;
   text-transform: uppercase;

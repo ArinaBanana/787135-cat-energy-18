@@ -47,6 +47,7 @@
 
 .product-additional__title {
   @include none-indentation;
+  @include font-non-standard;
   font-size: $font-s;
   font-weight: normal;
   line-height: 1;
@@ -103,6 +104,7 @@
 }
 
 .product-additional__btn {
+  @include font-non-standard;
   margin-bottom: 15px;
   width: 100%;
   font-size: $font-s;

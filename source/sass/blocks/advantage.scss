@@ -15,6 +15,7 @@
 
 .advantage__title {
   @include none-indentation;
+  @include font-non-standard;
   font-size: $font-xxl;
   line-height: 60px;
   font-weight: normal;

@@ -48,12 +48,12 @@
 .program__about {
   @include none-indentation;
   color: $color-lightgrey;
-  margin-bottom: 36px;
+  margin-bottom: 19px;
   word-break: break-word;
 
   @media (min-width: $width-tablet) {
     margin-bottom: 53px;
-    width: 45%;
+    width: 57%;
     font-size: $font-s;
     line-height: 24px;
   }

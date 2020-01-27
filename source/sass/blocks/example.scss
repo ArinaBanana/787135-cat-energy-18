@@ -70,7 +70,7 @@
 .example__about {
   @include none-indentation;
   color: $color-lightgrey;
-  margin-bottom: 42px;
+  margin-bottom: 23px;
   word-break: break-word;
 
   @media (min-width: $width-tablet) {
@@ -81,7 +81,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    margin-bottom: 65px;
+    margin-bottom: 42px;
     width: 65%;
   }
 }

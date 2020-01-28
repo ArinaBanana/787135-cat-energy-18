@@ -44,10 +44,6 @@
     transform: translate(-50%, -50%);
     margin-left: 0;
   }
-
-  @media (min-width: $width-desktop) {
-    transform: translateX(-44%);
-  }
 }
 
 .range__runner:hover {

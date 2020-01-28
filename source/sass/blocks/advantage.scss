@@ -80,6 +80,7 @@
 
 .advantage__item::before {
   content: " ";
+  display: block;
   position: relative;
   width: 66px;
   height: 60px;

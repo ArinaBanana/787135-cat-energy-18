@@ -79,7 +79,7 @@
   @media (min-width: $width-tablet) {
     font-size: $font-xxxl;
     color: $color-black;
-    text-align: start;
+    text-align: left;
     margin-bottom: 40px;
     width: 80%;
     padding: 57px 0 0 87px;
@@ -103,7 +103,7 @@
 
   @media (min-width: $width-tablet) {
     color: $color-black;
-    text-align: start;
+    text-align: left;
     font-size: $font-larger-m;
     line-height: 20px;
     padding-left: 90px;

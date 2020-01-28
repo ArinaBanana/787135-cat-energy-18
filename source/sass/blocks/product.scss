@@ -196,3 +196,31 @@
     margin: 0 auto;
   }
 }
+
+.product__image-small {
+  width: 140px;
+  height: 144px;
+
+  @media (min-width: $width-tablet) {
+    width: 324px;
+    height: 174px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 245px;
+  }
+}
+
+.product__image-big {
+  width: 140px;
+  height: 144px;
+
+  @media (min-width: $width-tablet) {
+    width: 324px;
+    height: 208px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 245px;
+  }
+}

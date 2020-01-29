@@ -54,6 +54,7 @@
 
 .additional-goods__title {
   @include none-indentation;
+  @include font-non-standard;
   font-size: $font-l;
   font-weight: normal;
   line-height: 1;
@@ -73,6 +74,6 @@
   @media (min-width: $width-desktop) {
     width: 35%;
     margin-left: -37px;
-    margin-bottom: 79px;
+    margin-bottom: 82px;
   }
 }

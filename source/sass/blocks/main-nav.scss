@@ -1,5 +1,8 @@
 .main-nav {
+  @include font-medium;
+
   @media (min-width: $width-tablet) {
+    @include font-non-standard;
     display: flex;
     margin-left: auto;
   }

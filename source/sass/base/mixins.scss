@@ -24,6 +24,14 @@
   }
 }
 
-@mixin font-placeholder {
-  font-family: "Oswald", "Arial", sans-serif;
+@mixin font-non-standard {
+  font-family: "Oswald", "Impact", sans-serif;
+}
+
+@mixin font-medium {
+  font-family: "Oswald Medium", "Impact", sans-serif;
+}
+
+@mixin font-main {
+  font-family: "Arial", "Helvetica", sans-serif;
 }

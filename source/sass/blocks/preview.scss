@@ -1,4 +1,5 @@
 .preview {
+  @include font-non-standard;
   position: relative;
 
   @media (min-width: $width-tablet) {
@@ -78,7 +79,7 @@
   @media (min-width: $width-tablet) {
     font-size: $font-xxxl;
     color: $color-black;
-    text-align: start;
+    text-align: left;
     margin-bottom: 40px;
     width: 80%;
     padding: 57px 0 0 87px;
@@ -88,7 +89,6 @@
     padding-left: 80px;
     padding-top: 76px;
     width: 500px;
-    //margin-bottom: 40px;
   }
 }
 
@@ -102,7 +102,7 @@
 
   @media (min-width: $width-tablet) {
     color: $color-black;
-    text-align: start;
+    text-align: left;
     font-size: $font-larger-m;
     line-height: 20px;
     padding-left: 90px;

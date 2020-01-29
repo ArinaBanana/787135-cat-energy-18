@@ -27,6 +27,7 @@
 
 .program__title {
   @include none-indentation;
+  @include font-non-standard;
   font-size: $font-l;
   line-height: 37px;
   text-transform: uppercase;
@@ -47,23 +48,24 @@
 .program__about {
   @include none-indentation;
   color: $color-lightgrey;
-  margin-bottom: 36px;
+  margin-bottom: 19px;
   word-break: break-word;
 
   @media (min-width: $width-tablet) {
     margin-bottom: 53px;
-    width: 45%;
+    width: 57%;
     font-size: $font-s;
     line-height: 24px;
   }
 
   @media (min-width: $width-desktop) {
-    width: 89%;
+    width: 100%;
     margin-bottom: 33px;
   }
 }
 
 .program__button {
+  @include font-non-standard;
   text-transform: uppercase;
   text-decoration: none;
   color: $color-black;
@@ -143,8 +145,6 @@
   bottom: 3px;
   width: 35px;
   height: 49px;
-  background-image: url("../img/icon-cat-slim.svg");
-  background-repeat: no-repeat;
 
   @media (min-width: $width-tablet) {
     width: 141px;
@@ -168,8 +168,6 @@
   transform: translateX(-50%);
   width: 67px;
   height: 28px;
-  background-image: url("../img/icon-cat-pro.svg");
-  background-repeat: no-repeat;
 
   @media (min-width: $width-tablet) {
     width: 268px;

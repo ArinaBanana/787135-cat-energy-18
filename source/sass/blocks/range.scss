@@ -28,6 +28,9 @@
   border-radius: 3px;
   position: absolute;
   margin-left: 8px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 
   @media (min-width: $width-tablet) {
     width: 34px;
@@ -37,12 +40,9 @@
     border-radius: 50%;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
     left: 50%;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
     margin-left: 0;
-  }
-
-  @media (min-width: $width-desktop) {
-    transform: translateX(-44%);
   }
 }
 
